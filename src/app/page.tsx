@@ -1,17 +1,24 @@
 import { Box } from '@mui/material';
 import Layout from './layout';
-import HeroSection from './components/HeroSection';
-import FeaturesSection from './components/FeaturesSection';
-import GallerySection from './components/GallerySection';
-import ContactSection from './components/Contact';
+import HomeSection from './pages/HomeSection';
+import FeaturesSection from './pages/FeaturesSection';
+import GallerySection from './pages/GallerySection';
+import ContactSection from './pages/Contact';
 import { ThemeProvider } from '@mui/material/styles';
-import theme from './theme';
+import Header from './components/Header'
+import Footer from './components/Footer'
+import theme from './styles/theme';
+import AboutPineapple from './pages/AboutPineapple'
 
 export default function Home() {
   return (
-    <Layout>
-      <HeroSection />
+    <div>
+      <Header />
+      <HomeSection />
+      <AboutPineapple />
+
+    </div>
+      
     
-    </Layout>
   );
 }

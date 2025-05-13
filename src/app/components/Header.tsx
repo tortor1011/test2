@@ -27,8 +27,11 @@ export default function ResponsiveAppBar() {
 
   return (
     <AppBar
-      position="static" // เปลี่ยนจาก fixed เป็น static
-      sx={{ background: "white", color: "#0E204E" }}
+      position="static" 
+      sx={{ background: "white",
+            color: "#0E204E",
+            boxShadow:0,
+            py:3, }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -38,19 +41,20 @@ export default function ResponsiveAppBar() {
             component="a"
             href="#app-bar-with-responsive-menu"
             sx={{
-              mr: 45,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
+              mr: 2,
+              pt:5,
+              display: { xs: 'flex', md: 'flex',lg:'flex' },
+              fontFamily: 'Playfair Display',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: '0E204E',
               textDecoration: 'none',
             }}
           >
             Pineapple<br />Island
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex',lg:'none' } }}>
             <IconButton
               size="large"
               aria-label="menu"
