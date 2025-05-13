@@ -9,8 +9,8 @@ export default function AboutSection() {
          display: {xs:'none',md:'flex',lg:'flex'},
          justifyContent: "center",
           alignItems: 'center', 
-          height: '90vh',
-        p: 10 }}>
+          height: '70vh',
+          mb:12 }}>
       {/* Left: Text title */}
       <Box>
         <Typography
@@ -20,6 +20,7 @@ export default function AboutSection() {
           sx={{ 
             mt:15,
             p:5,
+            height:'100%',
             display: {xs:'none',md:'flex',lg:'flex'},
             fontFamily:"Playfair Display",
             color: "#0E204E",
@@ -33,19 +34,25 @@ export default function AboutSection() {
 
       {/* Middle: Image */}
       <Box
-        sx={{
-          position: 'relative',
-          width: 500,
-          height: 350,
-          border: '2px solid #d4a4f5', 
-          mx: 3,
-        }}
+        // sx={{
+        //   position: 'relative',
+        //   width: 500,
+        //   height: 350,
+        //   border: '2px solid #d4a4f5', 
+        //   mt: 3,
+          
+        // }}
       >
         <Image
           src="/road.jpg" // ⬅️ รูปนี้ควรอยู่ใน public/pineapple-home.jpg
           alt="Pineapple Island"
-          fill
-          style={{ objectFit: 'cover' }}
+          priority={true}
+          width={900}
+          height={700}
+          style={{ 
+          position:'relative',
+          }}
+          
         />
       </Box>
 
