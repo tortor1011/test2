@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import theme from './styles/theme';
 import AboutPineapple from './pages/AboutPineapple'
 import WhyMustPPAP from './pages/WhyMustPPAP';
+import WhatPPAP from './pages/WhatPPAP';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <HomeSection />
       <AboutPineapple />
       <WhyMustPPAP />
+      <WhatPPAP />
 
     </div>
       
