@@ -2,25 +2,25 @@
 
 import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
+import road from '../../../public/image/road.jpg'
 
 export default function AboutSection() {
   return (
-    <Box sx={{
+    <>
+    <Box 
+    sx={{
          display: {xs:'none',md:'flex',lg:'flex'},
          justifyContent: "center",
-          alignItems: 'center', 
-          height: '70vh',
-          mb:12 }}>
+          mb:12 }}> 
+          {/* checked */}
       {/* Left: Text title */}
       <Box>
         <Typography
           variant="h2"
           fontWeight={700}
-          color="#0a1c48"
           sx={{ 
             mt:15,
             p:5,
-            height:'100%',
             display: {xs:'none',md:'flex',lg:'flex'},
             fontFamily:"Playfair Display",
             color: "#0E204E",
@@ -33,42 +33,44 @@ export default function AboutSection() {
       </Box>
 
       {/* Middle: Image */}
-      <Box
-        // sx={{
-        //   position: 'relative',
-        //   width: 500,
-        //   height: 350,
-        //   border: '2px solid #d4a4f5', 
-        //   mt: 3,
-          
-        // }}
-      >
+      <Box>
         <Image
-          src="/road.jpg" // ⬅️ รูปนี้ควรอยู่ใน public/pineapple-home.jpg
-          alt="Pineapple Island"
-          priority={true}
-          width={900}
-          height={700}
-          style={{ 
-          position:'relative',
-          }}
+          alt="home about"
+            src={road}
+            priority={true}
+            style={{
+              width: "720px",
+              height: "620px",
+              position: "relative",
+              
+            }}
           
         />
       </Box>
 
       {/* Right: Description box */}
-      <Box
-        sx={{
-          flex: 1,
-          backgroundColor: '#0a1c48',
-          color: 'white',
-          padding: 4,
-          height: '100%',
-          display: 'flex',
-          alignItems: 'center',
-        }}
+      <Box sx={{
+        width:"433px",
+        height:"300",
+        bgcolor:"#0E204E !important",
+      }}
+        
       >
-        <Typography variant="body1" lineHeight={1.8}>
+        <Typography 
+        variant="h6" 
+        noWrap
+        
+        sx={{
+          ml:6,
+          mt:8,
+          p:5,
+          
+          color: 'white',
+          fontFamily:"Manrope",
+          display: { xs: "none", md: "flex", lg: "flex" },
+          textWrap:"wrap",
+          textDecoration:"none",
+        }}>
           Pineapple Island is the most sought-after community in Ibadan that
           values and puts the needs of their clients first. It is a territory
           with loft complexes that creates a country life and homely feeling
@@ -78,5 +80,6 @@ export default function AboutSection() {
         </Typography>
       </Box>
     </Box>
+    </>
   );
 }

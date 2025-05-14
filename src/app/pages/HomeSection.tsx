@@ -1,6 +1,7 @@
 import { Box, Button, Container, Typography, AppBar, Toolbar, Link } from '@mui/material';
 import Image from 'next/image';
 import Head from 'next/head';
+import house from '../../../public/image/house.jpg'
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         }}
       >
         <Image
-        src="/house.jpg"     
+        src={house}     
         alt="Modern House"
         width={1368}        
         height={717}        
