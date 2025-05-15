@@ -9,6 +9,10 @@ import theme from './styles/theme';
 import AboutPineapple from './pages/AboutPineapple'
 import WhyMustPPAP from './pages/WhyMustPPAP';
 import WhatPPAP from './pages/WhatPPAP';
+import Galleries from './pages/Galleries';
+import AmazingFeatures from './pages/AmazingFeatures';
+import BecomeAgent from './pages/BecomeAgent';
+import Contact from './pages/Contact'
 
 export default function Home() {
   return (
@@ -18,7 +22,10 @@ export default function Home() {
       <AboutPineapple />
       <WhyMustPPAP />
       <WhatPPAP />
-
+      <Galleries />
+      <AmazingFeatures />
+      <BecomeAgent />
+      <Contact />
     </div>
       
     

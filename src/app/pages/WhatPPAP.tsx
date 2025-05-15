@@ -98,7 +98,7 @@ const WhatPPAP = () => {
         <Grid
           sx={{
             display: { sm: "none", md: "flex", lg: "flex" },
-            mb: 10
+            mb: 50
           }}
         >
           <Grid
