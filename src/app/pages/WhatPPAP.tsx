@@ -1,6 +1,9 @@
 import { Box, Button, Container, Typography, AppBar, Toolbar, Link,Grid } from '@mui/material';
 import Image from 'next/image';
-import FrameLogo1 from ".."
+import LogoFirstrow from "../styles/LogoFirstrow"
+import Garden from "../../../public/image/garden.jpg"
+import Garden2 from "../../../public/image/garden2.jpg"
+import LogoSecondRow from '../styles/LogoSecondRow';
 const WhatPPAP = () => {
   return (
     <>
@@ -31,18 +34,118 @@ const WhatPPAP = () => {
     </Box> 
     {/* end of text */}
     <Box
-    sx={{
-        display:"flex",
-        ml:10,
-    }}
-    >
-        <Grid>
-            <Grid>
-                <Framelogo1 />
-            </Grid>
+        sx={{
+          display: { xs: "none", md: "flex", lg: "flex" },
+          ml: 10
+        }}
+      >
+        <Grid
+          sx={{
+            display: { sm: "none", md: "flex", lg: "flex" },
+            mb: 10
+          }}
+        >
+          <Grid
+            size={6}
+            sx={{
+              display: { sm: "none", md: "flex", lg: "flex" },
+              m: 10
+            }}
+          >
+            <Box>
+              <Box
+                sx={{
+                  width: "412px",
+                  height: "195px",
+                  bgcolor: "#0E204E",
+                  position: "relative",
+                  py: 10,
+                  ml: 50,
+                  mt: 10
+                }}
+              ></Box>
+              <Image
+                alt="home about"
+                src={Garden}
+                priority={true}
+                style={{
+                  margin: 50,
+                  width: "567px",
+                  height: "582px",
+                  marginTop: "-500px",
+                  position: "absolute"
+                }}
+              />
+            </Box>
+          </Grid>
+          <Grid
+            size={6}
+            sx={{
+              justifyContent: "end",
+              alignContent: "center"
+            }}
+          >
+            <LogoFirstrow />
+          </Grid>
         </Grid>
-
-    </Box>
+      </Box>
+      <Box
+        sx={{
+          display: { xs: "none", md: "flex", lg: "flex" },
+          ml: 25
+        }}
+      >
+        <Grid
+          sx={{
+            display: { sm: "none", md: "flex", lg: "flex" },
+            mb: 10
+          }}
+        >
+          <Grid
+            size={6}
+            sx={{
+              justifyContent: "end",
+              alignContent: "center"
+            }}
+          >
+            <LogoSecondRow />
+          </Grid>
+          <Grid
+            size={6}
+            sx={{
+              display: { sm: "none", md: "flex", lg: "flex" },
+              py: 0,
+              ml: 15
+            }}
+          >
+            <Box>
+              <Box
+                sx={{
+                  width: "412px",
+                  height: "195px",
+                  bgcolor: "#0E204E",
+                  py: 10,
+                  position: "relative",
+                  mt: 2
+                }}
+              ></Box>
+              <Image
+                alt="home about"
+                src={Garden2}
+                priority={true}
+                style={{
+                  margin: 50,
+                  marginLeft: "200px",
+                  width: "568px",
+                  height: "582px",
+                  marginTop: "-500px",
+                  position: "absolute"
+                }}
+              />
+            </Box>
+          </Grid>
+        </Grid>
+      </Box>
     </>
   )
 }
