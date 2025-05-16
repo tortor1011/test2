@@ -8,7 +8,7 @@ function AmazingFeatures() {
     <Box
         sx={{
           display: { xs: "none", md: "flex", lg: "flex" },
-          ml: 25,
+          ml: 30,
           mb:20
         }}
       >
@@ -38,6 +38,7 @@ function AmazingFeatures() {
                 priority={true}
                 style={{
                   margin: 50,
+                  marginLeft:5,
                   width: "500px",
                   height: "700px",
                   marginTop: "-550px",

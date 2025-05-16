@@ -8,7 +8,7 @@ function BecomeAgent() {
     <Box
         sx={{
           display: { xs: "none", md: "flex", lg: "flex" },
-          ml: 15,
+          ml: 12,
           mb: 30
         }}
       >
