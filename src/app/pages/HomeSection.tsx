@@ -91,7 +91,7 @@ export default function Home() {
             paddingRight: "40px",
             position: "relative",
             width: "100%",
-            height: "50%",
+            height: "600px",
             filter: "brightness(0.60)"
           }}
         />

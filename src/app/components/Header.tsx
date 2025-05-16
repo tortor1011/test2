@@ -90,7 +90,7 @@ export default function ResponsiveAppBar() {
             </Menu>
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' , fontFamily: 'Playfair Display',mt:5 }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: {xs:"right",md:"right" , lg:'center'} , fontFamily: 'Playfair Display',mt:5 }}>
             {pages.map((page) => (
               <Button
                 key={page}
@@ -104,12 +104,14 @@ export default function ResponsiveAppBar() {
 
           <Button
             variant="contained"
-            sx={{ background: "#0E204E", color: "white", borderRadius: "0px" ,mt:5,fontFamily: 'Playfair Display',}}
+            sx={{ display: { xs: 'none', md: 'none',lg:"flex" } ,background: "#0E204E", color: "white", borderRadius: "0px" ,mt:5,fontFamily: 'Playfair Display',}}
           >
             Get in Touch
           </Button>
         </Toolbar>
       </Container>
     </AppBar>
+    
+    
   );
 }
