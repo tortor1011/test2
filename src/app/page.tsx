@@ -26,6 +26,7 @@ export default function Home() {
       <AmazingFeatures />
       <BecomeAgent />
       <Contact />
+      <Footer />
     </div>
       
     

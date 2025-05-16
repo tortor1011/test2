@@ -1,27 +1,66 @@
-import { Box, TextField, Button, Typography } from '@mui/material';
+import { Box, TextField, Button, Typography, Grid } from '@mui/material';
 
 export default function ContactSection() {
   return (
-    <Box sx={{ p: 5, bgcolor: '#1a237e', color: 'white' }}>
-      <Typography variant="h4" textAlign="center" gutterBottom>
-        Get in Touch
+    <Box>
+      <Typography
+          variant="h2"
+          noWrap
+          component="a"
+          
+          fontWeight={700}
+          sx={{
+         
+            display: { xs: "none", md: "flex", lg: "flex" },
+            fontFamily: "Playfair Display",
+            color: "#0E204E",
+            textDecoration: "none",
+            textWrap: "wrap",
+            justifyContent:"center"
+            
+          }}
+        >
+          Galleries
+        </Typography>
+        <Typography
+        noWrap
+        component="a"
+        sx={{
+          ml: 6,
+          mt: 4,
+          display: { xs: "none", md: "flex", lg: "flex" },
+          fontFamily: "Manrope",
+          color: "#0E204E",
+          textDecoration: "none",
+          textWrap: "stable",
+          justifyContent: "center"
+        }}
+      >
+        Are you curious about Pineapple Island? Send a message
       </Typography>
-      <Box component="form" sx={{ maxWidth: 600, mx: 'auto' }}>
-        <TextField fullWidth label="Name" margin="normal" variant="filled" sx={{ bgcolor: 'white' }} />
-        <TextField fullWidth label="Email" margin="normal" variant="filled" sx={{ bgcolor: 'white' }} />
-        <TextField
-          fullWidth
-          label="Message"
-          margin="normal"
-          variant="filled"
-          multiline
-          rows={4}
-          sx={{ bgcolor: 'white' }}
-        />
-        <Button variant="contained" color="secondary" sx={{ mt: 2 }}>
-          Submit
-        </Button>
-      </Box>
+        <Grid size={8} sx={{display: { sm: "none", md: "flex", lg: "flex" }, justifyContent:"center",mt:5}} >
+           <TextField name="name" id='outline-basic' label='name' sx={{display:"flex",width:"900px",[`& fieldset`]: {borderRadius: 0}}}></TextField>
+        </Grid>
+        <Grid size={8} sx={{display: { sm: "none", md: "flex", lg: "flex" }, justifyContent:"center",mt:5}}>
+          <TextField name="Phone No" id='outline-basic' label='Phone No' sx={{display:"flex",width:"900px",[`& fieldset`]: {borderRadius: 0}}} ></TextField>
+        </Grid>
+        <Grid size={8} sx={{display: { sm: "none", md: "flex", lg: "flex" }, justifyContent:"center",mt:5}}>
+           <TextField name="Email" id='outline-basic' label='Email' sx={{display:"flex",width:"900px",[`& fieldset`]: {borderRadius: 0}}}></TextField>
+        </Grid >
+        <Grid size={8} sx={{display: { sm: "none", md: "flex", lg: "flex" }, justifyContent:"center",mt:5}}>
+          <TextField name="Message" id='outline-basic' inputProps={{style: {height: "300px"}
+                }}  label='Message' sx={{display:"flex",width:"900px",[`& fieldset`]: {borderRadius: 0}}}></TextField>
+        </Grid >
+        <Grid size={8} sx={{display: { sm: "none", md: "flex", lg: "flex" }, justifyContent:"center",mt:5,mb:20}}>
+          <Button variant="contained" 
+          sx={{fontFamily: "Manrope",
+                  textTransform: "none",
+                  width: "120px",
+                  borderRadius: 0,
+                  backgroundColor: "#0E204E"}}>Send</Button>
+        </Grid>
     </Box>
+      
+      
   );
 }
