@@ -13,6 +13,8 @@ import Galleries from './pages/Galleries';
 import AmazingFeatures from './pages/AmazingFeatures';
 import BecomeAgent from './pages/BecomeAgent';
 import Contact from './pages/Contact'
+import "./styles/globals.css"
+
 
 
 export default function Home() {

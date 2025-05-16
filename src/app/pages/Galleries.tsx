@@ -94,7 +94,7 @@ function Galleries() {
 
         </Grid>
 
-        <Grid  sx={{display: { sm: "none", md: "flex", lg: "flex",gap:"30px" },justifyContent: "center",mt: 4 ,mb:30}}>
+        <Grid  sx={{display: { sm: "none", md: "flex", lg: "flex",gap:"30px" },justifyContent: "center",mt: 4 ,mb:55}}>
 
             <Grid size={4} sx={{display: { xs: "none", md: "flex", lg: "flex" }}}>
                 <Image alt='pic7' src={pic7} priority={true} style={{width:"553px",height:"469px"}} />

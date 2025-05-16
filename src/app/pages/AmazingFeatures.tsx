@@ -8,7 +8,8 @@ function AmazingFeatures() {
     <Box
         sx={{
           display: { xs: "none", md: "flex", lg: "flex" },
-          ml: 25
+          ml: 25,
+          mb:20
         }}
       >
       <Grid sx={{
@@ -20,12 +21,12 @@ function AmazingFeatures() {
               <Box
                 sx={{
                   width: "340px",
-                  height: "250px",
+                  height: "450px",
                   bgcolor: "#0E204E",
                   position: "relative",
                   py: 10,
                   ml: 50,
-                  mt: 15
+                  mt: -3
                 }}
               >
                 
@@ -51,6 +52,7 @@ function AmazingFeatures() {
           variant="h2"
           fontWeight={700}
           sx={{ 
+            marginTop:"-150px",
             ml:20,
             display: {xs:'none',md:'flex',lg:'flex'},
             fontFamily:"Playfair Display",

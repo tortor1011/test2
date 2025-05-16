@@ -16,7 +16,7 @@ function WhyMustPPAP() {
         }}
       >
         <Typography
-          variant="h3"
+          variant="h2"
           noWrap
           component="a"
           fontWeight={700}
@@ -47,11 +47,11 @@ function WhyMustPPAP() {
             <Box
           sx={{
             boxShadow: 2,
-            width: "290px",
             bgcolor: "white",
             display: { xs: "none", md: "flex", lg: "flex" },
             alignItems: "center",
-            px: 10
+            px: 10,
+            width:"450px"
           }}>
                 <Box>
                   <Typography

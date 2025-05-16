@@ -8,7 +8,7 @@ function BecomeAgent() {
     <Box
         sx={{
           display: { xs: "none", md: "flex", lg: "flex" },
-          ml: 10,
+          ml: 15,
           mb: 30
         }}
       >
@@ -19,7 +19,8 @@ function BecomeAgent() {
                 mt: 40,
                 ml: 23,
                 mr: 16,
-                width: "512px",
+                mb: 40,
+                width: "552px",
                 height: "200px",
                 position: "relative",
               }}
@@ -86,11 +87,12 @@ function BecomeAgent() {
                 sx={{
                   
                   width: "412px",
-                  height: "255px",
+                  height: "400px",
                   bgcolor: "#0E204E",
                   py: 10,
                   mt: 39,
-                  ml: 2
+                  ml: 2,
+                  
                  
                 }}
               ></Box>
@@ -104,7 +106,7 @@ function BecomeAgent() {
                   width: "500px",
                   height: "725px",
                   marginTop: "-550px",
-                  position: "absolute"
+                  position: "absolute",
                 }}
               />
             </Box>

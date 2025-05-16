@@ -49,7 +49,7 @@ export default function AboutSection() {
         
       >
         {[road, rightslide, leftslide].map((imgSrc, index) => (
-          <SwiperSlide color='white' key={index}>
+            <SwiperSlide key={index}>
             <Image
               alt={`slide-${index}`}
               src={imgSrc}
@@ -58,7 +58,7 @@ export default function AboutSection() {
               height={620}
               style={{ objectFit: 'cover' }}
             />
-          </SwiperSlide>
+            </SwiperSlide>
         ))}
       </Swiper>
     </Box>

@@ -27,14 +27,15 @@ export default function Home() {
         <Box
           sx={{
             width: "700px",
-            height: "400px",
+            height: "450px",
             bgcolor: "#0E204E",
             py: 10,
             position: "absolute",
             paddingBottom:0,
             ml: 50,
             mt: 20,
-            mr: 124
+            mr: 124,
+            
           }}
         >
           <Typography

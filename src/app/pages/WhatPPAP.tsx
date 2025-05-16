@@ -20,6 +20,7 @@ const WhatPPAP = () => {
           fontWeight={700}
           sx={{ 
             mt:15,
+            mb:10,
             p:5,
             display: {xs:'none',md:'flex',lg:'flex'},
             fontFamily:"Playfair Display",
@@ -56,12 +57,12 @@ const WhatPPAP = () => {
               <Box
                 sx={{
                   width: "370px",
-                  height: "195px",
+                  height: "290px",
                   bgcolor: "#0E204E",
                   position: "relative",
                   py: 10,
                   ml: 50,
-                  mt: 10
+                 
                 }}
               ></Box>
               <Image
@@ -72,7 +73,7 @@ const WhatPPAP = () => {
                   margin: 50,
                   width: "560px",
                   height: "582px",
-                  marginTop: "-500px",
+                  marginTop: "-400px",
                   position: "absolute"
                 }}
               />
@@ -94,7 +95,8 @@ const WhatPPAP = () => {
       <Box
         sx={{
           display: { xs: "none", md: "flex", lg: "flex" },
-          ml: 25
+          ml: 25,
+          mt: 20
         }}
       >
         <Grid
@@ -124,7 +126,7 @@ const WhatPPAP = () => {
               <Box
                 sx={{
                   width: "400px",
-                  height: "195px",
+                  height: "300px",
                   bgcolor: "#0E204E",
                   py: 10,
                   position: "relative",
@@ -140,7 +142,7 @@ const WhatPPAP = () => {
                   marginLeft: "200px",
                   width: "568px",
                   height: "582px",
-                  marginTop: "-500px",
+                  marginTop: "-450px",
                   position: "absolute"
                 }}
               />
