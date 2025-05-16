@@ -55,7 +55,7 @@ const WhatPPAP = () => {
             <Box>
               <Box
                 sx={{
-                  width: "412px",
+                  width: "370px",
                   height: "195px",
                   bgcolor: "#0E204E",
                   position: "relative",
@@ -70,12 +70,14 @@ const WhatPPAP = () => {
                 priority={true}
                 style={{
                   margin: 50,
-                  width: "567px",
+                  width: "560px",
                   height: "582px",
                   marginTop: "-500px",
                   position: "absolute"
                 }}
               />
+              
+              
             </Box>
           </Grid>
           <Grid
@@ -121,7 +123,7 @@ const WhatPPAP = () => {
             <Box>
               <Box
                 sx={{
-                  width: "412px",
+                  width: "400px",
                   height: "195px",
                   bgcolor: "#0E204E",
                   py: 10,

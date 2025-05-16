@@ -8,6 +8,7 @@ const theme = createTheme({
   typography: {
     h2: { fontWeight: 700 },
     h4: { fontWeight: 600 },
+    fontFamily: 'Manrope, sans-serif',
   },
 });
 

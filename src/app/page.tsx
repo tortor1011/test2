@@ -14,6 +14,7 @@ import AmazingFeatures from './pages/AmazingFeatures';
 import BecomeAgent from './pages/BecomeAgent';
 import Contact from './pages/Contact'
 
+
 export default function Home() {
   return (
     <div>

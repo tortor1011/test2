@@ -3,6 +3,12 @@
 import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
 import road from '../../../public/image/road.jpg'
+import leftslide from '../../../public/image/leftslide.jpg'
+import rightslide from '../../../public/image/rightslide.jpg'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules'; 
+import 'swiper/css';
+import 'swiper/css/navigation'; 
 
 export default function AboutSection() {
   return (
@@ -33,20 +39,29 @@ export default function AboutSection() {
       </Box>
 
       {/* Middle: Image */}
-      <Box>
-        <Image
-          alt="home about"
-            src={road}
-            priority={true}
-            style={{
-              width: "720px",
-              height: "620px",
-              position: "relative",
-              
-            }}
-          
-        />
-      </Box>
+      <Box sx={{ width: 720, height: 620, position: 'relative' }}>
+      <Swiper
+        modules={[Navigation]}
+        navigation
+        spaceBetween={20}
+        slidesPerView={1}
+        loop={true}
+        
+      >
+        {[road, rightslide, leftslide].map((imgSrc, index) => (
+          <SwiperSlide color='white' key={index}>
+            <Image
+              alt={`slide-${index}`}
+              src={imgSrc}
+              priority
+              width={720}
+              height={620}
+              style={{ objectFit: 'cover' }}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </Box>
 
       {/* Right: Description box */}
       <Box sx={{
@@ -64,6 +79,7 @@ export default function AboutSection() {
           ml:6,
           mt:8,
           p:5,
+
           
           color: 'white',
           fontFamily:"Manrope",

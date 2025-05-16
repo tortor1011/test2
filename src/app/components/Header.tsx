@@ -31,22 +31,23 @@ export default function ResponsiveAppBar() {
       sx={{ background: "white",
             color: "#0E204E",
             boxShadow:0,
-            py:3, }}
+            py:3,
+             }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
-            variant="h6"
+            variant="h4"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            
             sx={{
               mr: 2,
               pt:5,
               display: { xs: 'flex', md: 'flex',lg:'flex' },
               fontFamily: 'Playfair Display',
               fontWeight: 700,
-              letterSpacing: '.3rem',
+              letterSpacing: '.0rem',
               color: '0E204E',
               textDecoration: 'none',
             }}
@@ -83,18 +84,18 @@ export default function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center" sx={{fontFamily: 'Playfair Display',}}>{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' , fontFamily: 'Playfair Display',mt:5 }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: '#0E204E', display: 'block', mx: 2 }}
+                sx={{ my: 2, color: '#0E204E', display: 'block', mx: 2,textTransform:"none",fontSize:"20px" ,}}
               >
                 {page}
               </Button>
@@ -103,7 +104,7 @@ export default function ResponsiveAppBar() {
 
           <Button
             variant="contained"
-            sx={{ background: "#0E204E", color: "white", borderRadius: "0px" }}
+            sx={{ background: "#0E204E", color: "white", borderRadius: "0px" ,mt:5,fontFamily: 'Playfair Display',}}
           >
             Get in Touch
           </Button>

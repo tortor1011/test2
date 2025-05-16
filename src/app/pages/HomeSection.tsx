@@ -26,7 +26,7 @@ export default function Home() {
         />
         <Box
           sx={{
-            width: "650px",
+            width: "700px",
             height: "400px",
             bgcolor: "#0E204E",
             py: 10,
@@ -34,11 +34,11 @@ export default function Home() {
             paddingBottom:0,
             ml: 50,
             mt: 20,
-            mr: 125
+            mr: 124
           }}
         >
           <Typography
-            variant="h3"
+            variant="h2"
             noWrap
             
             fontWeight={700}
@@ -60,10 +60,11 @@ export default function Home() {
             noWrap
             
             sx={{
-              ml: 6,
+              fontSize:18,
+              ml: 4,
               mt: 2,
               display: { xs: "none", md: "flex", lg: "flex" },
-              fontFamily: "Manrope",
+              fontFamily: "manrope",
               color: "white",
               textDecoration: "none",
               justifyContent: "center"
