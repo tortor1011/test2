@@ -77,6 +77,99 @@ export default function Home() {
           </Typography>
         </Box>
       </Box>
+      <Box
+        sx={{
+          display: { xs: "flex", md: "none", lg: "none" }
+        }}
+      >
+        <Image
+          alt="home about"
+          src={house}
+          priority={true}
+          style={{
+            paddingLeft: "40px",
+            paddingRight: "40px",
+            position: "relative",
+            width: "100%",
+            height: "50%",
+            filter: "brightness(0.60)"
+          }}
+        />
+      </Box>
+      <Box
+        sx={{
+          display: { xs: "flex", md: "none", lg: "none" },
+          justifyContent: "center",
+          mt: -55
+        }}
+      >
+        <Typography
+          variant="h5"
+          
+          fontWeight={700}
+          sx={{
+            fontFamily: "Playfair Display",
+            position: "absolute",
+            fontWeight: 700,
+            textWrap: "wrap",
+            color: "white",
+            textDecoration: "none"
+          }}
+        >
+          Pineapple Island:
+        </Typography>
+        <Typography
+          variant="h5"
+          
+          fontWeight={700}
+          sx={{
+            fontFamily: "Playfair Display",
+            mt: 4,
+            position: "absolute",
+            fontWeight: 700,
+            textWrap: "wrap",
+            color: "white",
+            textDecoration: "none"
+          }}
+        >
+          GenZ and Millenial Abode
+        </Typography>
+
+        <Typography
+          
+          sx={{
+            fontFamily: "Manrope",
+            mt: 10,
+            position: "absolute",
+            ml: 6,
+            pr: 5,
+            textWrap: "pretty",
+            color: "white",
+            textDecoration: "none",
+
+            textAlign: "center"
+          }}
+        >
+          a community that gives you a taste of happiness, a place you’ll love
+          to live and an opportunity to build a home.
+        </Typography>
+        <Button
+          variant="contained"
+          sx={{
+            fontFamily: "Manrope",
+            textTransform: "none",
+            color: "black",
+            bgcolor: "white",
+            mt: 25
+          }}
+        >
+          Get in Touch
+        </Button>
+      </Box>
+      
+    
+        
+    
 
     </>
   );
