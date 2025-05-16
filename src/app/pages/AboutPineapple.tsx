@@ -26,6 +26,7 @@ export default function AboutSection() {
           fontWeight={700}
           sx={{ 
             mt:15,
+            mr:12,
             p:5,
             display: {xs:'none',md:'flex',lg:'flex'},
             fontFamily:"Playfair Display",
@@ -76,7 +77,7 @@ export default function AboutSection() {
         noWrap
         
         sx={{
-          ml:6,
+          ml:0,
           mt:8,
           p:5,
 
