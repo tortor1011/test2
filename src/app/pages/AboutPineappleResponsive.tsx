@@ -1,13 +1,93 @@
-import { Box, Button, Container, Typography, AppBar, Toolbar, Link,Grid } from '@mui/material';
+'use client';
+
+import { Box, Typography, Grid } from '@mui/material';
 import Image from 'next/image';
+import road from '../../../public/image/road.jpg'
+import leftslide from '../../../public/image/leftslide.jpg'
+import rightslide from '../../../public/image/rightslide.jpg'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules'; 
+import 'swiper/css';
+import 'swiper/css/navigation'; 
 import LogoFirstrow from "../styles/LogoFirstrow"
 import Garden from "../../../public/image/garden.jpg"
 import Garden2 from "../../../public/image/garden2.jpg"
 import LogoSecondRow from '../styles/LogoSecondRow';
-const WhatPPAP = () => {
+import homeresponsive from '../../../public/imageforresponsive/homeres.png'
+
+export default function AboutSection() {
   return (
     <>
-    <Box 
+ <Box
+        sx={{
+          display: { xs: "flex", md: "none", lg: "none" },
+          justifyContent: "center",
+          mt: 30,
+          mb:4
+        }}
+      >
+        <Typography
+          variant="h4"
+          fontWeight={700}
+          sx={{
+            fontFamily: "Playfair Display",
+            position: "absolute",
+            
+            textWrap: "wrap",
+            color: "#0E204E",
+            textDecoration: "none",
+            textAlign: "center"
+          }}
+        >
+          About <br /> Pineapple Island
+        </Typography>
+        
+      </Box>
+      <Box
+        sx={{
+          display: { xs: "flex", md: "none", lg: "none" },
+          justifyContent: "center",
+          
+          mb:4,
+        }}
+      >
+       <Image
+          alt="home about"
+          src={homeresponsive}
+          priority={true}
+          style={{
+            marginTop: "100px",
+            paddingLeft: "40px",
+            paddingRight: "40px",
+            width: "100%",
+            height: "80%",
+            filter: "brightness(0.60)"
+          }}
+        />
+        <Typography
+          
+          sx={{
+            fontFamily: "Lato",
+            mt: 17,
+            position: "absolute",
+            ml: 12,
+            pr: 10,
+            textWrap: "pretty",
+            color: "white",
+            textDecoration: "none",
+            textAlign: "center"
+          }}
+        >
+          Pineapple Island is the most sought-after community in Ibadan that
+          values and puts the needs of their clients first. It is a territory
+          with loft complexes that creates a country life and homely feeling
+          that is integrated with industrial development. A perfect,
+          professional built abode that gives you the true taste of beauty and
+          happiness.
+        </Typography>
+        
+      </Box>
+         <Box 
     sx={{
          display: {xs:'none',md:'flex',lg:'flex'},
          justifyContent: "center",
@@ -151,6 +231,5 @@ const WhatPPAP = () => {
         </Grid>
       </Box>
     </>
-  )
+  );
 }
-export default WhatPPAP
