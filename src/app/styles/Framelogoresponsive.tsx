@@ -7,17 +7,24 @@ import Light from "../../../public/LogoFrame/Light.png"
 import Tree from "../../../public/LogoFrame/Tree.png"
 import SmartHome from "../../../public/LogoFrame/SmartHome.png"
 import GoodRate from "../../../public/LogoFrame/GoodRate.png"
+import Money from "../../../public/LogoFrame/Money.png"
+import newsetting from "../../../public/LogoFrame/Setting.png"
+import Privatesecurity from "../../../public/LogoFrame/Privatesecurity.png"
+import Internet from "../../../public/LogoFrame/Internet.png"
+import Electricy from "../../../public/LogoFrame/Electricy.png"
+import EcoFriendly from "../../../public/LogoFrame/EcoFriendly.png"
 
 function Framelogoresponsive() {
   return (
     <>
       <Grid
         container
-        columns={4}
+        columns={3}
         sx={{
           display: { xs: "flex", md: "none", lg: "none" },
           mt: 5,
-          px: 3,
+          px: 6,
+          
           
         }}
       >
@@ -36,7 +43,7 @@ function Framelogoresponsive() {
             >
               <Image
                 alt="Tree"
-                src={Tree}
+                src={EcoFriendly}
                 priority={true}
                 style={{
                   justifyContent: "center",
@@ -47,7 +54,7 @@ function Framelogoresponsive() {
             </Box>
 
             <Box>
-              <Typography
+              {/* <Typography
                 sx={{
                   fontSize: "12px",
                   fontFamily: "Poppins",
@@ -55,7 +62,7 @@ function Framelogoresponsive() {
                 }}
               >
                 Eco Friendly
-              </Typography>
+              </Typography> */}
             </Box>
           </Grid>
         </Box>
@@ -72,7 +79,7 @@ function Framelogoresponsive() {
             >
               <Image
                 alt="SmartHome"
-                src={SmartHome}
+                src={Internet}
                 priority={true}
                 style={{
                   justifyContent: "center",
@@ -83,7 +90,7 @@ function Framelogoresponsive() {
             </Box>
 
             <Box>
-              <Typography
+              {/* <Typography
                 sx={{
                   fontSize: "12px",
                   fontFamily: "Poppins",
@@ -91,7 +98,7 @@ function Framelogoresponsive() {
                 }}
               >
                 Smart Homes
-              </Typography>
+              </Typography> */}
             </Box>
           </Grid>
         </Box>
@@ -107,8 +114,8 @@ function Framelogoresponsive() {
               }}
             >
               <Image
-                alt="GoodRate"
-                src={GoodRate}
+                alt="Money"
+                src={Money}
                 priority={true}
                 style={{
                   justifyContent: "center",
@@ -119,7 +126,7 @@ function Framelogoresponsive() {
             </Box>
 
             <Box>
-              <Typography
+              {/* <Typography
                 sx={{
                   fontSize: "12px",
                   fontFamily: "Poppins",
@@ -127,7 +134,7 @@ function Framelogoresponsive() {
                 }}
               >
                 Good Rates
-              </Typography>
+              </Typography> */}
             </Box>
           </Grid>
         </Box>
@@ -144,7 +151,7 @@ function Framelogoresponsive() {
             >
               <Image
                 alt="Setting"
-                src={Setting}
+                src={newsetting}
                 priority={true}
                 style={{
                   justifyContent: "center",
@@ -155,7 +162,7 @@ function Framelogoresponsive() {
             </Box>
 
             <Box>
-              <Typography
+              {/* <Typography
                 sx={{
                   fontSize: "12px",
                   fontFamily: "Poppins",
@@ -165,7 +172,7 @@ function Framelogoresponsive() {
               >
                 Serviced <br />
                 Apartment
-              </Typography>
+              </Typography> */}
             </Box>
           </Grid>
         </Box>
@@ -182,7 +189,7 @@ function Framelogoresponsive() {
             >
               <Image
                 alt="PrivateLock"
-                src={PrivateLock}
+                src={Privatesecurity}
                 priority={true}
                 style={{
                   justifyContent: "center",
@@ -193,7 +200,7 @@ function Framelogoresponsive() {
             </Box>
 
             <Box sx={{}}>
-              <Typography
+              {/* <Typography
                 sx={{
                   ml: 5,
                   fontSize: "12px",
@@ -205,7 +212,7 @@ function Framelogoresponsive() {
                 Private
                 <br />
                 Security
-              </Typography>
+              </Typography> */}
             </Box>
           </Grid>
         </Box>
@@ -222,7 +229,7 @@ function Framelogoresponsive() {
             >
               <Image
                 alt="Light"
-                src={Light}
+                src={Electricy}
                 priority={true}
                 style={{
                   justifyContent: "center",
@@ -234,7 +241,7 @@ function Framelogoresponsive() {
             </Box>
 
             <Box>
-              <Typography
+              {/* <Typography
                 sx={{
                   fontSize: "12px",
                   fontFamily: "Poppins",
@@ -246,7 +253,7 @@ function Framelogoresponsive() {
                 24/7
                 <br />
                 Electricity
-              </Typography>
+              </Typography> */}
             </Box>
           </Grid>
         </Box>

@@ -34,9 +34,9 @@ export default function Home() {
       <AmazingFeatures />
       <BecomeAgent />
       <Contact />
-      
+      <Contactresonsive />
       <Footer />
-      
+      <FooterResponsive />
     </div>
       
     
