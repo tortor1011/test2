@@ -35,20 +35,22 @@ export default function Home() {
         }}
           priority={true}
         />
-        <Box
-          sx={{
-            width: "700px",
-            height: "450px",
-            bgcolor: "#0E204E",
-            py: 10,
-            position: "absolute",
-            paddingBottom:0,
-            ml: 50,
-            mt: 20,
-            mr: 124,
-            
-          }}
-        >
+       <Box
+  sx={{
+    width: { xs: "90%", md: "700px" },
+    height: { xs: "300px", md: "450px" },
+    bgcolor: "#0E204E",
+    py: { xs: 3, md: 10 },
+    position: { xs: "relative", md: "absolute" },
+    ml: { xs: 2, md: 50 },
+    mt: { xs: 5, md: 20 },
+    mr: { xs: 2, md: 124 },
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  }}
+>
           <Typography
             variant="h2"
             noWrap

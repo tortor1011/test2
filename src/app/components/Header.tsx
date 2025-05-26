@@ -55,7 +55,7 @@ export default function ResponsiveAppBar() {
             Pineapple<br />Island
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'flex',lg:'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: "none",lg:'none' } }}>
             <IconButton
               size="large"
               aria-label="menu"
@@ -104,7 +104,7 @@ export default function ResponsiveAppBar() {
 
           <Button
             variant="contained"
-            sx={{ display: { xs: 'none', md: 'none',lg:"flex" } ,background: "#0E204E", color: "white", borderRadius: "0px" ,mt:5,fontFamily: 'Playfair Display',}}
+            sx={{ display: { xs: 'none', md: 'none',lg:"flex" } ,background: "#0E204E", color: "white", borderRadius: "0px" ,mt:5,fontFamily: 'manrope',}}
           >
             Get in Touch
           </Button>
