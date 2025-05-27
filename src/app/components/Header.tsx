@@ -42,7 +42,7 @@ export default function ResponsiveAppBar() {
             component="a"
             
             sx={{
-              mr: 19,
+              mr: { xs: 19, sm: 60,md:70,lg:60 },
               pt:5,
               display: { xs: 'flex', md: 'flex',lg:'flex' },
               fontFamily: 'Playfair Display',

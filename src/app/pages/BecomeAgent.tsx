@@ -18,7 +18,7 @@ function BecomeAgent() {
               sx={{
                 mt: 40,
                 ml: 23,
-                mr: 16,
+                mr: 1,
                 mb: 40,
                 width: "552px",
                 height: "200px",
@@ -106,7 +106,7 @@ function BecomeAgent() {
                   width: "500px",
                   height: "725px",
                   marginTop: "-550px",
-                  position: "absolute",
+                  position: "relative",
                 }}
               />
             </Box>

@@ -1,39 +1,54 @@
 import Image from "next/image"
-import { Box } from "@mui/material"
-import Tree from "../../../public/LogoFrame/Tree.png"
-import SmartHome from "../../../public/LogoFrame/SmartHome.png"
-import GoodRate from "../../../public/LogoFrame/GoodRate.png"
+import { Box,Grid,Typography } from "@mui/material"
+import Tree from "../../../public/picturenotext/tree-evergreen-20-regular.png"
+import SmartHome from "../../../public/picturenotext/network (1).png"
+import GoodRate from "../../../public/picturenotext/BlingBling.png"
 
 const LogoFirstrow = () => {
   return (
     <>
-     <Box>
-        <Image 
-        alt="Tree"
-        src={Tree}
-        priority={true}
-        style={{
-            marginLeft:"100px"
-        }}
-        />
+          <Box sx={{display:"flex"}}>
+        <Grid>
+            <Image 
+            alt="Tree"
+            src={Tree}
+            priority={true}
+            style={{
+                marginRight:"80px"
+            }}
+            />
+            <Typography>
+              Eco Friendly
+            </Typography>
+        </Grid>
+        <Grid>
+            <Image 
+            alt="Smarthome"
+            src={SmartHome}
+            priority={true}
+            style={{
+                marginRight:"80px"
+            }}
+            />
+            <Typography>
+              Smart Homes
+            </Typography>
+        </Grid>
 
-        <Image 
-        alt="Tree"
-        src={SmartHome}
-        priority={true}
-        style={{
-            marginLeft:"110px"
-        }}
-        />
-
-        <Image 
-        alt="Tree"
-        src={GoodRate}
-        priority={true}
-        style={{
-            marginLeft:"110px"
-        }}
-        />
+        <Grid>
+            <Image 
+            alt="Goodrate"
+            src={GoodRate}
+            priority={true}
+            style={{
+                marginRight:"80px",
+                marginTop:"15px"
+            }}
+            />
+            <Typography sx={{mt:"11px"}}>
+              Good Rates
+            </Typography>
+        </Grid>
      </Box>
     </>
   )

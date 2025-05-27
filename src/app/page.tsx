@@ -17,6 +17,7 @@ import GallerieResponsive from './pages/GallerieResponsive';
 import Contactresonsive from './pages/contactresonsive';
 import "./styles/globals.css"
 import FooterResponsive from './components/FooterResponsive';
+import About from "./pages/About"
 
 
 
@@ -25,6 +26,7 @@ export default function Home() {
     <div>
       <Header />
       <HomeSection />
+      <About />
       <WhyMustPPAP />
       <AboutPineappleResponsive />
       

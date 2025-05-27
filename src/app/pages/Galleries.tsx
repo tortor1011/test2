@@ -23,6 +23,7 @@ function Galleries() {
           sx={{
          
             display: { xs: "none", md: "flex", lg: "flex" },
+            padding:0,
             fontFamily: "Playfair Display",
             color: "#0E204E",
             textDecoration: "none",
@@ -65,7 +66,7 @@ function Galleries() {
       >
         an opportunity to build a home.
       </Typography>
-        
+      <Box sx={{display:"grid"}}>
         <Grid  sx={{display: { sm: "none", md: "flex", lg: "flex",gap:"30px" },justifyContent: "center",mt: 4}}>
 
             <Grid size={4} sx={{display: { xs: "none", md: "flex", lg: "flex" }}}>
@@ -108,6 +109,7 @@ function Galleries() {
 
         </Grid>
         </Box>
+      </Box>
     </>
   )
 }
