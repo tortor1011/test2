@@ -7,14 +7,8 @@ import Light from "../../../public/picturenotext/LightTube.png";
 const LogoSecondRow = () => {
   return (
     <Box  sx={{ display: "flex", justifyContent: "center", width: "100%" }}>
-      <Grid
-        container
-        spacing={2}
-        justifyContent="center"
-        alignItems="center"
-        sx={{ maxWidth: "800px" }}
-      >
-        <Grid item xs={4} sx={{ textAlign: "center" }}>
+     
+        <Grid  sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center',marginRight:5 }}>
           <Image
             alt="Setting"
             src={Setting}
@@ -29,7 +23,7 @@ const LogoSecondRow = () => {
           </Typography>
         </Grid>
 
-        <Grid item xs={4} textAlign="center">
+        <Grid  sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center',marginRight:5 }}>
           <Image
             alt="PrivateLock"
             src={PrivateLock}
@@ -44,7 +38,7 @@ const LogoSecondRow = () => {
           </Typography>
         </Grid>
 
-        <Grid item xs={4} textAlign="center">
+        <Grid  sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center',marginRight:5 }}>
           <Image
             alt="Light"
             src={Light}
@@ -59,7 +53,6 @@ const LogoSecondRow = () => {
             24/7 Electricity
           </Typography>
         </Grid>
-      </Grid>
     </Box>
   );
 };
