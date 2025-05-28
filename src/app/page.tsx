@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, Container } from '@mui/material';
 import Layout from './layout';
 import HomeSection from './pages/HomeSection';
 import ContactSection from './pages/Contact';
@@ -23,7 +23,7 @@ import About from "./pages/About"
 
 export default function Home() {
   return (
-    <div>
+    <Container>
       <Header />
       <HomeSection />
       <About />
@@ -39,7 +39,7 @@ export default function Home() {
       <Contactresonsive />
       <Footer />
       <FooterResponsive /> 
-    </div>
+    </Container>
       
     
   );
