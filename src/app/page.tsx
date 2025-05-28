@@ -29,7 +29,7 @@ export default function Home() {
       <About />
       <WhyMustPPAP />
       <AboutPineappleResponsive />
-{/*       
+      
       <WhatPPAPResponsive />
       <Galleries />
       <GallerieResponsive />
@@ -38,7 +38,7 @@ export default function Home() {
       <Contact />
       <Contactresonsive />
       <Footer />
-      <FooterResponsive />  */}
+      <FooterResponsive /> 
     </div>
       
     

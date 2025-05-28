@@ -13,7 +13,7 @@ export default function Footer() {
             "polygon(100% 42%, 100% 100%, 96% 100%, 84% 100%, 0 100%, 0 32%, 11% 12%)"
         }}>
       <Box sx={{
-            ml: 70,
+            ml: { xs: "none", md: 0, lg: 70 },
             mt: 15,
             width: "270px"
           }}>

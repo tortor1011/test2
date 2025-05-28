@@ -14,6 +14,7 @@ import Garden from "../../../public/image/garden.jpg"
 import Garden2 from "../../../public/image/garden2.jpg"
 import LogoSecondRow from '../styles/LogoSecondRow';
 import homeresponsive from '../../../public/imageforresponsive/homeres.png'
+import { dark } from '@mui/material/styles/createPalette';
 
 export default function AboutSection() {
   return (
@@ -133,7 +134,7 @@ export default function AboutSection() {
               m: 10
             }}
           >
-            <Box>
+            
               <Box
                 sx={{
                   width: "250px",
@@ -142,24 +143,28 @@ export default function AboutSection() {
                   position: "relative",
                   py: 10,
                   ml: 50,
-                 
+                  
                 }}
-              ></Box>
+              >
               <Image
                 alt="home about"
                 src={Garden}
                 priority={true}
+                
                 style={{
                   margin: 50,
                   width: "560px",
                   height: "582px",
-                  marginTop: "-400px",
-                  position: "absolute"
+                  marginLeft:"-500px",
+                  marginTop: "-200px",
+                  position: "absolute",
+                  
+                  
                 }}
               />
+              </Box>
               
-              
-            </Box>
+            
           </Grid>
           <Grid
             size={6}
@@ -225,7 +230,8 @@ export default function AboutSection() {
                   width: "568px",
                   height: "582px",
                   marginTop: "-200px",
-                  position: "absolute"
+                  position: "absolute",
+                  paddingLeft:"50px"
                 }}
               />
               </Box>

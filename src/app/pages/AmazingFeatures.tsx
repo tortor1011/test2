@@ -50,7 +50,7 @@ function AmazingFeatures() {
           height: "700px",
           marginTop: "-550px",
           position: "absolute",
-          // สำหรับ 1440px ให้ใช้ media query ผ่าน inline style ไม่ได้ ต้องใช้ styled-components หรือ className ถ้าจำเป็น
+  
         }}
       />
     </Box>
