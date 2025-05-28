@@ -8,7 +8,7 @@ const LogoSecondRow = () => {
   return (
     <Box  sx={{ display: "flex", justifyContent: "center", width: "100%" }}>
      
-        <Grid  sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center',marginRight:5 }}>
+        <Grid  sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center',marginRight:{sm:10,md:20,lg:5} }}>
           <Image
             alt="Setting"
             src={Setting}
@@ -18,12 +18,12 @@ const LogoSecondRow = () => {
               height: "auto",
             }}
           />
-          <Typography sx={{ mt: 1 }}>
+          <Typography sx={{ mt: 1,whiteSpace:"nowrap"  }}>
             Serviced Apartment
           </Typography>
         </Grid>
 
-        <Grid  sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center',marginRight:5 }}>
+        <Grid  sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center',marginRight:{sm:10,md:20,lg:5} }}>
           <Image
             alt="PrivateLock"
             src={PrivateLock}
@@ -33,7 +33,7 @@ const LogoSecondRow = () => {
               height: "auto",
             }}
           />
-          <Typography sx={{ mt: 1 }}>
+          <Typography sx={{ mt: 1,whiteSpace:"nowrap"  }}>
             Private Security
           </Typography>
         </Grid>
@@ -44,12 +44,12 @@ const LogoSecondRow = () => {
             src={Light}
             priority={true}
             style={{
-              width: "50px",
+              width: "33px",
               height: "auto",
               marginTop: "5px",
             }}
           />
-          <Typography sx={{ mt: "6px" }}>
+          <Typography sx={{ mt: "6px ",whiteSpace:"nowrap" }}>
             24/7 Electricity
           </Typography>
         </Grid>

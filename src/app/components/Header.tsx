@@ -104,7 +104,7 @@ export default function ResponsiveAppBar() {
 
           <Button
             variant="contained"
-            sx={{ display: { xs: 'none', md: 'flex',lg:"flex" } ,background: "#0E204E", color: "white", borderRadius: "0px" ,mt:5,fontFamily: 'manrope',}}
+            sx={{ display: { xs: 'none', md: 'flex',lg:"flex" } ,background: "#0E204E", color: "white", borderRadius: "0px" ,mt:5,fontFamily: 'manrope',whiteSpace:"nowrap"}}
           >
             Get in Touch
           </Button>

@@ -30,8 +30,8 @@ export default function Home() {
           style={{ 
             position: 'relative', 
             clipPath: 'polygon(100% 0, 100% 100%, 79% 83%, 0 100%, 0 0)',
-            width: '100vw', 
-            maxWidth: '1368px', 
+            width: '70vw', 
+            maxWidth: '1360px', 
             height: 'auto',
           }}
           priority={true}
@@ -40,12 +40,12 @@ export default function Home() {
         />
         <Box
           sx={{
-            width: { xs: '90%', md: '700px' },
-            height: { xs: '300px', md: '450px' },
+            width: { xs: '90%', sm:"400",md: '600px',lg:"700px" },
+            height: { xs: '300px',sm:"200", md: '300px',lg:"450px" },
             bgcolor: '#0E204E',
             py: { xs: 3, md: 10 },
             position: { xs: 'relative', md: 'absolute' },
-            ml: { xs: 2, md: 'calc(50vw - 350px)' }, 
+            ml: { xs: 2, md: '20px' }, 
             mt: { xs: 5, md: 20 },
             mr: { xs: 2, md: 'calc(70vw - 350px)' }, 
             display: 'flex',

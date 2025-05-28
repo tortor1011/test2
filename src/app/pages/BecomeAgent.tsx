@@ -18,7 +18,7 @@ function BecomeAgent() {
               sx={{
                 mt: 40,
                 ml: 23,
-                mr: 1,
+                mr: { xs: 0, md: 0, lg: 0,xl:50 },
                 mb: 40,
                 width: "552px",
                 height: "200px",
@@ -92,23 +92,25 @@ function BecomeAgent() {
                   py: 10,
                   mt: 39,
                   ml: 2,
+                  pl: 10
                   
                  
                 }}
-              ></Box>
+              >
               <Image
                 alt="home about"
                 src={girl}
                 priority={true}
                 style={{
                   margin: 50,
-                  marginLeft: "200px",
+              
                   width: "500px",
                   height: "725px",
-                  marginTop: "-550px",
+                  marginTop: "-250px",
                   position: "relative",
                 }}
               />
+              </Box>
             </Box>
         </Grid>
         

@@ -216,7 +216,7 @@ export default function AboutSection() {
                   py: 10,
                   position: "relative",
                   mt: 2,
-                  ml:{md:0,lg:0,xl:50}
+                  ml:{md:"-100px",lg:0,xl:50}
                 }}
               >
               <Image

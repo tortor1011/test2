@@ -13,9 +13,10 @@ export default function Footer() {
             "polygon(100% 42%, 100% 100%, 96% 100%, 84% 100%, 0 100%, 0 32%, 11% 12%)"
         }}>
       <Box sx={{
-            ml: { xs: "none", md: 0, lg: 70 },
+            ml: { xs: "none", md: 20, lg: 30 },
             mt: 15,
-            width: "270px"
+            width: "270px",
+            mr:{ xs: "none", sm:0,md: 7, lg: 30 }
           }}>
         <Typography variant="h4"
             noWrap
@@ -42,7 +43,7 @@ export default function Footer() {
       </Box>
 
       <Box sx={{
-            ml: 20,
+           
             mt: 20,
             width: "270px"
           }}>
