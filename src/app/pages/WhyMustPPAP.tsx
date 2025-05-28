@@ -39,7 +39,7 @@ function WhyMustPPAP() {
         <Box
         sx={{
           display: { xs: "none", md: "flex", lg: "flex" },
-          ml: 70,
+          ml: { xs: "none", md: 10, lg: 70 },
           mt: -75,
           position: "absolute"
         }}

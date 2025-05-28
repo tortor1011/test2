@@ -136,7 +136,7 @@ export default function AboutSection() {
             <Box>
               <Box
                 sx={{
-                  width: "370px",
+                  width: "250px",
                   height: "290px",
                   bgcolor: "#0E204E",
                   position: "relative",
@@ -205,27 +205,30 @@ export default function AboutSection() {
             <Box>
               <Box
                 sx={{
-                  width: "400px",
+                  width: "600px",
                   height: "300px",
                   bgcolor: "#0E204E",
                   py: 10,
                   position: "relative",
-                  mt: 2
+                  mt: 2,
+                  ml:{md:0,lg:0,xl:50}
                 }}
-              ></Box>
+              >
               <Image
                 alt="home about"
                 src={Garden2}
                 priority={true}
+                
                 style={{
                   margin: 50,
-                  marginLeft: "200px",
+                  
                   width: "568px",
                   height: "582px",
-                  marginTop: "-450px",
+                  marginTop: "-200px",
                   position: "absolute"
                 }}
               />
+              </Box>
             </Box>
           </Grid>
         </Grid>

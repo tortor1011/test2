@@ -42,7 +42,7 @@ export default function ResponsiveAppBar() {
             component="a"
             
             sx={{
-              mr: { xs: 19, sm: 60,md:70,lg:60 },
+              mr: { xs: 19, sm: 60,md:20,lg:60 },
               pt:5,
               display: { xs: 'flex', md: 'flex',lg:'flex' },
               fontFamily: 'Playfair Display',
@@ -104,7 +104,7 @@ export default function ResponsiveAppBar() {
 
           <Button
             variant="contained"
-            sx={{ display: { xs: 'none', md: 'none',lg:"flex" } ,background: "#0E204E", color: "white", borderRadius: "0px" ,mt:5,fontFamily: 'manrope',}}
+            sx={{ display: { xs: 'none', md: 'flex',lg:"flex" } ,background: "#0E204E", color: "white", borderRadius: "0px" ,mt:5,fontFamily: 'manrope',}}
           >
             Get in Touch
           </Button>
