@@ -40,8 +40,8 @@ export default function Home() {
         />
         <Box
           sx={{
-            width: { xs: '90%', sm:"400",md: '600px',lg:"700px" },
-            height: { xs: '300px',sm:"200", md: '300px',lg:"450px" },
+            width: { xs: '90%', sm:"300px",md: '550px',lg:["400px","600px"],xl:"700px" },
+            height: { xs: '300px',sm:"200px", md: '300px',lg:["200px","400px"],xl:"450px" },
             bgcolor: '#0E204E',
             py: { xs: 3, md: 10 },
             position: { xs: 'relative', md: 'absolute' },

@@ -42,7 +42,7 @@ export default function ResponsiveAppBar() {
             component="a"
             
             sx={{
-              mr: { xs: 19, sm: 60,md:20,lg:60 },
+              mr: { xs: 19, sm: 50,md:20,lg:60 },
               pt:5,
               display: { xs: 'flex', md: 'flex',lg:'flex' },
               fontFamily: 'Playfair Display',
@@ -55,7 +55,7 @@ export default function ResponsiveAppBar() {
             Pineapple<br />Island
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: "none",lg:'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex',sm:"flex", md: "none",lg:'none' } }}>
             <IconButton
               size="large"
               aria-label="menu"
