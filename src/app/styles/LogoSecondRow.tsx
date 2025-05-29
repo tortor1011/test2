@@ -8,32 +8,34 @@ const LogoSecondRow = () => {
   return (
     <Box  sx={{ display: "flex", justifyContent: "center", width: "100%" }}>
      
-        <Grid  sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center',marginRight:{sm:10,md:20,lg:5} }}>
+        <Grid  sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center',marginRight:{sm:10,md:10,lg:5} }}>
           <Image
             alt="Setting"
             src={Setting}
             priority={true}
             style={{
-              width: "50px",
+              maxWidth: "50px",
+              width:"100%",
               height: "auto",
             }}
           />
-          <Typography sx={{ mt: 1,whiteSpace:"nowrap"  }}>
+          <Typography sx={{ mt: 1, }}>
             Serviced Apartment
           </Typography>
         </Grid>
 
-        <Grid  sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center',marginRight:{sm:10,md:20,lg:5} }}>
+        <Grid  sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center',marginRight:{sm:10,md:10,lg:5} }}>
           <Image
             alt="PrivateLock"
             src={PrivateLock}
             priority={true}
             style={{
-              width: "50px",
+              maxWidth: "50px",
+              width:"100%",
               height: "auto",
             }}
           />
-          <Typography sx={{ mt: 1,whiteSpace:"nowrap"  }}>
+          <Typography sx={{ mt: 1,  }}>
             Private Security
           </Typography>
         </Grid>
@@ -44,7 +46,8 @@ const LogoSecondRow = () => {
             src={Light}
             priority={true}
             style={{
-              width: "33px",
+              maxWidth: "33px",
+              width:"100%",
               height: "auto",
               marginTop: "5px",
             }}

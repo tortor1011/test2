@@ -2,12 +2,12 @@ import { Box, Button, Container, Typography, AppBar, Toolbar, Link ,Grid} from '
 import pic1 from "../../../public/galleries/pic1.jpg"
 import pic2 from "../../../public/galleries/pic2.jpg"
 import pic3 from "../../../public/galleries/pic3.jpg"
-import pic4 from "../../../public/galleries/pic4.jpg"
+import pic4 from "../../../public/galleries/Replace1.jpg"
 import pic5 from "../../../public/galleries/pic5.jpg"
 import pic6 from "../../../public/galleries/pic6.jpg"
-import pic7 from "../../../public/galleries/pic7.jpg"
-import pic8 from "../../../public/galleries/pic8.jpg"
-import pic9 from "../../../public/galleries/pic9.jpg"
+import pic7 from "../../../public/galleries/Replace2.jpg"
+import pic8 from "../../../public/galleries/Replace3.jpg"
+import pic9 from "../../../public/galleries/Replace4.jpg"
 
 import Image from 'next/image';
 function Galleries() {
@@ -70,13 +70,13 @@ function Galleries() {
         <Grid  sx={{display: {xs:"none", sm: "none", md: "flex", lg: "flex",xl:"flex" ,gap:"30px"},justifyContent: "center",mt: 4}}>
 
             <Grid size={3} sx={{display: { xs: "none", md: "flex", lg: "flex" }}}>
-                <Image alt='pic1' src={pic1} priority={true} style={{width:"478px",height:"469px"}} />
+                <Image alt='pic1' src={pic1} priority={true} style={{maxWidth:"469px",width:"100%",maxHeight:"469px",height:"100%"}} />
             </Grid>
             <Grid size={3} sx={{ display: { xs: "none", md: "flex", lg: "flex" } }}>
-                <Image alt='pic2' src={pic2} priority={true} style={{width:"478px",height:"469px"}}/>
+                <Image alt='pic2' src={pic2} priority={true} style={{maxWidth:"469px",width:"100%",maxHeight:"469px",height:"100%"}}/>
             </Grid>
             <Grid size={3} sx={{ display: { xs: "none", md: "flex", lg: "flex" } }}>
-                <Image alt='pic3' src={pic3} priority={true} style={{width:"478px",height:"469px"}}/>
+                <Image alt='pic3' src={pic3} priority={true} style={{maxWidth:"469px",width:"100%",maxHeight:"469px",height:"100%"}}/>
             </Grid>
 
         </Grid>
@@ -84,13 +84,13 @@ function Galleries() {
         <Grid  sx={{display: { sm: "none", md: "flex", lg: "flex", },justifyContent: "center",mt: 4,gap:"30px"}}>
 
             <Grid size={3} sx={{display: { xs: "none", md: "flex", lg: "flex" }}}>
-                <Image alt='pic4' src={pic4} priority={true} style={{width:"478px",height:"469px"}} />
+                <Image alt='pic4' src={pic4} priority={true} style={{maxWidth:"469px",width:"100%",maxHeight:"469px",height:"100%"}} />
             </Grid>
             <Grid size={3} sx={{ display: { xs: "none", md: "flex", lg: "flex" } }}>
-                <Image alt='pic5' src={pic5} priority={true} style={{width:"478px",height:"469px"}}/>
+                <Image alt='pic5' src={pic5} priority={true} style={{maxWidth:"469px",width:"100%",maxHeight:"469px",height:"100%"}}/>
             </Grid>
             <Grid size={3} sx={{ display: { xs: "none", md: "flex", lg: "flex" } }}>
-                <Image alt='pic6' src={pic6} priority={true} style={{width:"478px",height:"469px"}}/>
+                <Image alt='pic6' src={pic6} priority={true} style={{maxWidth:"469px",width:"100%",maxHeight:"469px",height:"100%"}}/>
             </Grid>
 
         </Grid>
@@ -98,13 +98,13 @@ function Galleries() {
         <Grid  sx={{display: { sm: "none", md: "flex", lg: "flex",},justifyContent: "center",mt: 4 ,mb:55,gap:"30px"}}>
 
             <Grid size={4} sx={{display: { xs: "none", md: "flex", lg: "flex" }}}>
-                <Image alt='pic7' src={pic7} priority={true} style={{width:"478px",height:"469px"}} />
+                <Image alt='pic7' src={pic7} priority={true} style={{maxWidth:"469px",width:"100%",maxHeight:"469px",height:"100%"}} />
             </Grid>
             <Grid size={4} sx={{ display: { xs: "none", md: "flex", lg: "flex" } }}>
-                <Image alt='pic8' src={pic8} priority={true} style={{width:"478px",height:"469px"}}/>
+                <Image alt='pic8' src={pic8} priority={true} style={{maxWidth:"469px",width:"100%",maxHeight:"469px",height:"100%"}}/>
             </Grid>
             <Grid size={4} sx={{ display: { xs: "none", md: "flex", lg: "flex" } }}>
-                <Image alt='pic9' src={pic9} priority={true} style={{width:"478px",height:"469px"}}/>
+                <Image alt='pic9' src={pic9} priority={true} style={{maxWidth:"469px",width:"100%",maxHeight:"469px",height:"100%"}}/>
             </Grid>
 
         </Grid>

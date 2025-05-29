@@ -1,14 +1,15 @@
-import { Box, Button, Container, Typography, AppBar, Toolbar, Link,Grid } from '@mui/material';
+"use client"
+import { Box, Button, Container, Typography, AppBar, Toolbar, Link,Grid, ThemeProvider } from '@mui/material';
 import Image from 'next/image';
-import girl from "../../../public/image/girl.jpg"
-
+import girl from "../../../public/image/ReplaceGirl.jpg"
+import theme from '../styles/theme';
 function BecomeAgent() {
   return (
     <>
     <Box
         sx={{
           display: { xs: "none", md: "flex", lg: "flex" },
-          ml: 12,
+          ml: { xs: "none", md: 0, lg: 8,xl:12 },
           mb: 30
         }}
       >
@@ -16,15 +17,16 @@ function BecomeAgent() {
         <Grid>
             <Box
               sx={{
-                mt: 40,
+                mt: { xs: 0, md: 33, lg: 33,xl:35 },
                 ml: 23,
-                mr: { xs: 0, md: 0, lg: 0,xl:50 },
+                mr: { xs: 0, md: 10, lg: 30,xl:30 },
                 mb: 40,
                 width: "552px",
                 height: "200px",
                 position: "relative",
               }}
             >
+              <ThemeProvider theme={theme} >
               <Typography
                 variant="h2"
                 noWrap
@@ -42,6 +44,7 @@ function BecomeAgent() {
                 Become an
                 <br /> Agent
               </Typography>
+              </ThemeProvider>
               <Typography
                 noWrap
                 component="a"
@@ -86,31 +89,34 @@ function BecomeAgent() {
               <Box
                 sx={{
                   
-                  width: "412px",
-                  height: "400px",
+                  maxWidth:"200px",
+                  width: "100%",
+                  height: "320px",
                   bgcolor: "#0E204E",
                   py: 10,
                   mt: 39,
-                  ml: 2,
-                  pl: 10
-                  
+                  ml: 10,
+                  pl: 10,
+                                
                  
                 }}
-              >
+              ></Box>
               <Image
                 alt="home about"
                 src={girl}
                 priority={true}
                 style={{
                   margin: 50,
-              
-                  width: "500px",
-                  height: "725px",
-                  marginTop: "-250px",
+                  
+                  maxWidth:"552px",
+                  width: "100%",
+                  height: "auto",
+                  marginTop: "-500px",
                   position: "relative",
+                  padding:"60px"
                 }}
               />
-              </Box>
+              
             </Box>
         </Grid>
         

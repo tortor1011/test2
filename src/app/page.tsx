@@ -23,7 +23,7 @@ import About from "./pages/About"
 
 export default function Home() {
   return (
-    <Container>
+    <div>
       <Header />
       <HomeSection />
       <About />
@@ -39,7 +39,7 @@ export default function Home() {
       <Contactresonsive />
       <Footer />
       <FooterResponsive /> 
-    </Container>
+    </div>
       
     
   );

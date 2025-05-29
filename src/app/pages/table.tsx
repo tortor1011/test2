@@ -10,9 +10,10 @@ const Table = () => {
           key={i}
           sx={{
             bgcolor: i % 2 === 0 ? "#0E3F3333" : "transparent",
-            width: { xs: "90%", sm: "450px", md: "500px" },
-            height: "45px",
-            ml: { xs: 2, sm: 6, md: 20 },
+            maxWidth:"500px",
+            width: { xs: "90%", sm: "50%", md: "100%" },
+            height: "auto",
+            ml: { xs: 2, sm: 8, md: 5,lg:10,xl:20 },
             mt: i === 0 ? 5 : 2,
             mb: 1,
             pt: 0.5,
@@ -27,7 +28,7 @@ const Table = () => {
               fontFamily: "Manrope",
               color: "#0E204E",
               textDecoration: "none",
-              fontSize: "19px",
+              fontSize: { xs: "none", sm: "14px", md: "14px" ,lg:"19px"},
               justifyContent: "center",
               pl: 5,
               display: "inline-block",

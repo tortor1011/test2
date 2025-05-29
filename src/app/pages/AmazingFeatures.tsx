@@ -27,16 +27,14 @@ function AmazingFeatures() {
     <Box>
       <Box
         sx={{
-          width: {sm:200,md:200,lg:200,xl:200},
+          width: {sm:200,md:300,lg:500,xl:200},
           height: "450px",
           bgcolor: "#0E204E",
           position: "relative",
-          py: 10,
-          ml: 50,
+          py: 0,
+          ml: {sm:0,md:2,lg:5,xl:50},
           mt: -3,
-          "@media (min-width:1440px)": {
-            ml: 60,
-          }
+          mr:{md:20,lg:20,xl:40}
         }}
       />
       <Image
@@ -62,15 +60,15 @@ function AmazingFeatures() {
       fontWeight={700}
       sx={{
         marginTop: "-150px",
-        ml: 20,
+        
         display: { xs: "none", md: "flex", lg: "flex" },
         fontFamily: "Playfair Display",
         color: "#0E204E",
         textDecoration: "none",
-        textWrap: "wrap",
-        "@media (min-width:1440px)": {
-          ml: 25,
-        }
+        textWrap: "nowrap",
+        
+        ml: { xs: "none", md: 6, lg: 10,xl: 22 },
+        
       }}
     >
       Amazing Features

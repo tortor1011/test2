@@ -14,7 +14,11 @@ const LogoFirstrow = () => {
             src={Tree}
             priority={true}
             style={{
-                marginRight:"80px"
+              marginRight:"80px",
+              maxWidth:"80px",
+              width:"100%",
+              height: "auto",
+            
             }}
             />
             <Typography>
@@ -27,7 +31,10 @@ const LogoFirstrow = () => {
             src={SmartHome}
             priority={true}
             style={{
-                marginRight:"80px"
+              marginRight:"80px",
+              maxWidth:"80px",
+              width:"100%",
+              height: "auto",
             }}
             />
             <Typography>
@@ -41,7 +48,10 @@ const LogoFirstrow = () => {
             src={GoodRate}
             priority={true}
             style={{
-                marginRight:"80px",
+              marginRight:"80px",
+              maxWidth:"80px",
+              width:"100%",
+              height: "auto",
                 marginTop:"15px"
             }}
             />

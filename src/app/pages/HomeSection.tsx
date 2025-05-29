@@ -17,9 +17,11 @@ export default function Home() {
     <>
       <Box
         sx={{
-          display: { xs: 'none', md: 'flex', lg: 'flex' },
-          justifyContent: 'flex-end',
+          display: { xs: 'none', md: 'flex', lg: 'flex',xl:"flex" },
+          justifyContent: "flex-end",
           mb: 12,
+          position:"relative"
+          
         }}
       >
         <Image
@@ -29,19 +31,21 @@ export default function Home() {
           height={717}        
           style={{ 
             position: 'relative', 
-            clipPath: 'polygon(100% 0, 100% 100%, 79% 83%, 0 100%, 0 0)',
-            width: '70vw', 
-            maxWidth: '1360px', 
+            clipPath: 'polygon(100% 0, 100% 100%, 79% 83%, 0 100%, 0 0)', 
+            maxWidth: '1268px', 
+            width: '100%',
             height: 'auto',
+            
           }}
           priority={true}
           quality={100} 
-          sizes="(max-width: 1368px) 100vw, 1368px" 
+        
         />
         <Box
           sx={{
-            width: { xs: '90%', sm:"300px",md: '550px',lg:["400px","600px"],xl:"700px" },
-            height: { xs: '300px',sm:"200px", md: '300px',lg:["200px","400px"],xl:"450px" },
+            maxWidth:"650px",
+            width: "100%",
+            height: "auto",
             bgcolor: '#0E204E',
             py: { xs: 3, md: 10 },
             position: { xs: 'relative', md: 'absolute' },
@@ -59,17 +63,17 @@ export default function Home() {
             noWrap
             fontWeight={700}
             sx={{
-              mr: 2,
+              mr: { xs: 'none', md: 20, lg: 13,xl:2 },
               display: { xs: 'none', md: 'flex', lg: 'flex' },
               fontFamily: 'Playfair Display',
               fontWeight: 700,
               color: 'white',
               textDecoration: 'none',
-              justifyContent: 'center',
+              justifyContent: 'flex-start',
               alignContent: 'center',
               letterSpacing: 2,
-              fontSize: { md: '2.5rem', lg: '3rem', xl: '3.5rem' }, 
-              lineHeight: '1.2', 
+              fontSize: { md: '2rem', lg: '2.7rem', xl: '3.5rem' }, 
+              lineHeight: '1.25', 
             }}
           >
             Pineapple Island: <br /> GenZ and Millenial <br /> Abode

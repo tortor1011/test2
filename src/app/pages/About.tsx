@@ -113,35 +113,34 @@ export default function About() {
     display: { xs: 'none', md: 'flex', lg: 'flex' },
     justifyContent: "center",
     mb: 12,
-    px: { md: 2, lg: 4, xl: 6 }, // Add padding for larger screens
+    px: { md: 2, lg: 4, xl: 6 }, 
   }}
 > 
-  {/* Left: Text title */}
+ 
   <Box>
     <Typography
       variant="h2"
       fontWeight={700}
       sx={{ 
         mt: 15,
-        mr: { md: 8, lg: 12, xl: 16 }, // Responsive margin for larger screens
+        mr: { md: 0, lg: 5, xl: 16 },
         p: 5,
         display: { xs: 'none', md: 'flex', lg: 'flex' },
         fontFamily: "Playfair Display",
         color: "#0E204E",
         textDecoration: "none",
-        textWrap: "wrap",
-        fontSize: { md: '2.5rem', lg: '3rem', xl: '3.5rem' }, // Scale for Retina
-        lineHeight: '1.2', // Improve text rendering
+        textWrap: "wrap", 
+        lineHeight: '1.2', 
       }}
     >
       About <br /> Pineapple <br /> Island
     </Typography>
   </Box>
 
-  {/* Middle: Image */}
+  
   <Box sx={{ 
-    width: { md: 600, lg: 720, xl: 800 }, // Responsive width
-    height: { md: 500, lg: 620, xl: 700 }, // Responsive height
+    width: { md: 600, lg: 720, xl: 800 }, 
+    height: { md: 500, lg: 620, xl: 700 },
     position: 'relative',
   }}>
     <Swiper
@@ -158,24 +157,25 @@ export default function About() {
             src={imgSrc}
             priority
             width={720}
-            height={620}
+            height={552}
             style={{ 
               objectFit: 'cover',
+              maxWidth:"800px",
               width: '100%',
-              height: '100%',
+              minHeight: '552px',
             }}
-            quality={100} // Optimize for Retina
-            sizes="(max-width: 800px) 100vw, 720px" // Optimize for different screen sizes
+          
+       
           />
         </SwiperSlide>
       ))}
     </Swiper>
   </Box>
 
-  {/* Right: Description box */}
+
   <Box sx={{
-    width: { md: '400px', lg: '433px', xl: '480px' }, // Responsive width
-    height: { md: '398px', lg: '476px', xl: '529px' }, // Responsive height
+    width: { md: '400px', lg: '433px', xl: '480px' }, 
+    height: { md: '552px', lg: '552px', xl: '552px' }, 
     bgcolor: "#0E204E !important",
   }}>
     <Typography 

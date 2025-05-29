@@ -227,11 +227,12 @@ export default function AboutSection() {
                 style={{
                   margin: 50,
                   
-                  width: "568px",
+                  maxWidth: "568px",
+                  width:"100%",
                   height: "582px",
                   marginTop: "-200px",
-                  position: "absolute",
-                  paddingLeft:"50px"
+                  position: "relative",
+                
                 }}
               />
               </Box>
