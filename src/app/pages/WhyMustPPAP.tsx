@@ -15,8 +15,7 @@ function WhyMustPPAP() {
           height: "708px",
           bgcolor: "#0E204E",
           position:"relative",
-          clipPath:
-            "polygon(50% 0%, 100% 0, 100% 100%, 84% 93%, 60% 80%, 0 100%, 0 0)"
+          
         }}
       >
         <ThemeProvider theme={theme}>
@@ -40,29 +39,25 @@ function WhyMustPPAP() {
           Island
         </Typography>
         </ThemeProvider>
-        
-        <Box
-        sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
-          justifyContent:"flex-end",
-          position: "absolute",
-          mr:5,
-          left:"700px",
-          top:"70px"
           
-        }}
-      >
-            <Box
+
+        
+            <Container maxWidth={false}
           sx={{
             boxShadow: 2,
             bgcolor: "white",
             display: { xs: "none", md: "flex", lg: "flex" },
             alignItems: "center",
-            px: 10,
-            width:"450px",
+            p: 10,
+            maxWidth:"650px",
+            textAlign:"center",
+            whiteSpace: "normal",
+            position:"absolute",
+            justifyContent:"center",
+            alignContent:"center",
             
           }}>
-                
+               <Box maxWidth={"50%"}> 
                   <Typography
                   variant='h6'
                   noWrap
@@ -71,7 +66,7 @@ function WhyMustPPAP() {
                     fontFamily:"Manrope",
                     color: "#0E204E",
                     textDecoration:"none",
-                    textWrap:"wrap",
+                    whiteSpace: "normal",
                     
                   }}>
                   Pineapple Island is the most sought-after community in Ibadan that
@@ -81,8 +76,8 @@ function WhyMustPPAP() {
                   perfect, professional built abode that gives you the true taste of
                   beauty and happiness.
                     </Typography>
-                
-            </Box>
+                </Box>
+            <Box maxWidth={"50%"}>
             <Image 
             alt='home about'
             src={crophome}
@@ -90,12 +85,14 @@ function WhyMustPPAP() {
             style={{
               maxWidth:"500px",
               width:"100%",
-              maxHeight:"600px"
-            }}
+              maxHeight:"700px",
+              objectFit: "cover",
+              position:"relative"
 
-            
-            />
-        </Box>
+            }}/>
+            </Box>
+            </Container>
+        
         
         </Box>
         

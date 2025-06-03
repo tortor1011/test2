@@ -34,7 +34,7 @@ export default function ResponsiveAppBar() {
             py:3,
              }}
     >
-      <Container maxWidth="xl">
+      <Container maxWidth={false}>
         <Toolbar disableGutters>
           <Typography
             variant="h4"
@@ -42,7 +42,7 @@ export default function ResponsiveAppBar() {
             component="a"
             
             sx={{
-              mr: { xs: 19, sm: 50,md:20,lg:60 },
+              
               pt:5,
               display: { xs: 'flex', md: 'flex',lg:'flex' },
               fontFamily: 'Playfair Display',
@@ -50,12 +50,13 @@ export default function ResponsiveAppBar() {
               letterSpacing: '.0rem',
               color: '0E204E',
               textDecoration: 'none',
+              justifyContent:"flex-end"
             }}
           >
             Pineapple<br />Island
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex',sm:"flex", md: "none",lg:'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex',sm:"flex", md: "none",lg:'none' } ,justifyContent:"flex-end"}}>
             <IconButton
               size="large"
               aria-label="menu"

@@ -6,9 +6,9 @@ import Light from "../../../public/picturenotext/LightTube.png";
 
 const LogoSecondRow = () => {
   return (
-    <Box  sx={{ display: "flex", justifyContent: "center", width: "100%" }}>
+    <Box  sx={{ display:{xs:"none",sm:"flex",lg:"flex"}, justifyContent: "center", width: "100%" ,gap:"30px"}}>
      
-        <Grid  sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center',marginRight:{sm:10,md:10,lg:5} }}>
+        <Grid  sx={{ display: {xs:"none",sm:"flex",lg:"flex"}, flexDirection: 'column', alignItems: 'center', }}>
           <Image
             alt="Setting"
             src={Setting}
@@ -24,7 +24,7 @@ const LogoSecondRow = () => {
           </Typography>
         </Grid>
 
-        <Grid  sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center',marginRight:{sm:10,md:10,lg:5} }}>
+        <Grid  sx={{ display: {xs:"none",sm:"flex",lg:"flex"}, flexDirection: 'column', alignItems: 'center',}}>
           <Image
             alt="PrivateLock"
             src={PrivateLock}
@@ -40,7 +40,7 @@ const LogoSecondRow = () => {
           </Typography>
         </Grid>
 
-        <Grid  sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center',marginRight:5 }}>
+        <Grid  sx={{ display: {xs:"none",sm:"flex",lg:"flex"}, flexDirection: 'column', alignItems: 'center',}}>
           <Image
             alt="Light"
             src={Light}

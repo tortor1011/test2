@@ -2,80 +2,79 @@ import { Box, Button, Container, Typography, AppBar, Toolbar, Link,Grid } from '
 import Image from 'next/image';
 import dining from "../../../public/image/diningroom.jpg"
 import Table from "./table"
+import { wrap } from 'module';
 function AmazingFeatures() {
   return (
     <>
-    <Box
-  sx={{
-    display: { xs: "none", md: "flex", lg: "flex" },
-    ml: 15,
-    mb: 20,
-    "@media (min-width:1440px)": {
-      ml: { xs: 10, md: 10, lg: 10 }
-    }
-  }}
->
-  <Grid
+    <Container maxWidth={false}
+        sx={{display: { xs: "none", md: "flex", lg: "flex" },
+      flexdirection: "column"}}>
+
+  <Box maxWidth={"50%"} 
     sx={{
       display: { sm: "none", md: "flex", lg: "flex" },
       mb: 10,
-      "@media (min-width:1440px)": {
-        mb: 12,
-      }
+      alignItems:"center",
+      width:"100%",
+      justifyContent:"center"
+
+      
     }}
   >
-    <Box>
-      <Box
-        sx={{
-          width: {sm:200,md:300,lg:500,xl:200},
-          height: "450px",
+    <Grid  
+    sx={{
+          maxWidth:"600px",
+          width:"100%",
+          height: "300px",
           bgcolor: "#0E204E",
           position: "relative",
-          py: 0,
-          ml: {sm:0,md:2,lg:5,xl:50},
-          mt: -3,
-          mr:{md:20,lg:20,xl:40}
-        }}
-      />
+          mt:"-450px"
+          ,}}
+>
       <Image
         alt="home about"
         src={dining}
         priority={true}
         style={{
-          margin: 50,
-          marginLeft: 5,
-          width: "500px",
+          maxWidth: "500px",
+          width:"100%",
           height: "700px",
-          marginTop: "-550px",
-          position: "absolute",
+          position: "relative",
+          marginTop:"-150px"
   
         }}
       />
-    </Box>
-  </Grid>
+    </Grid>
+  </Box>
 
-  <Grid>
+  <Box maxWidth={"50%"} 
+  sx={{display: { xs: "none", md: "flex", lg: "flex" },
+      width:"100%",
+      justifyContent:"flex-end",
+      flexWrap: "wrap",
+      alignContent:"flex-end",
+      flexDirection:"column",
+      mb:50
+      }}>
     <Typography
       variant="h2"
       fontWeight={700}
       sx={{
-        marginTop: "-150px",
         
         display: { xs: "none", md: "flex", lg: "flex" },
         fontFamily: "Playfair Display",
         color: "#0E204E",
         textDecoration: "none",
         textWrap: "nowrap",
-        
-        ml: { xs: "none", md: 6, lg: 10,xl: 22 },
-        
+        marginLeft:{sm:"20px",md: "40px", lg: "100px",xl:"160px" }
+         
       }}
     >
       Amazing Features
     </Typography>
     <Table />
-  </Grid>
-</Box>
+  </Box>
+</Container>
 
     </>
   )

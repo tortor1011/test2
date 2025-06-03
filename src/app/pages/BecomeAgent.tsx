@@ -6,21 +6,20 @@ import theme from '../styles/theme';
 function BecomeAgent() {
   return (
     <>
-    <Box
+    <Container maxWidth={false}
         sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
-          ml: { xs: "none", md: 0, lg: 8,xl:12 },
-          mb: 30
+          display: { xs: "none", md: "flex", lg: "flex" }
         }}
       >
 
-        <Grid>
+        <Box maxWidth={"50%"}
+        sx={{ width: "100%", 
+        display: { xs: "none", md: "flex", lg: "flex" }, 
+        justifyContent:"center",
+        gap:"30px"
+        }}>
             <Box
               sx={{
-                mt: { xs: 0, md: 33, lg: 33,xl:35 },
-                ml: 23,
-                mr: { xs: 0, md: 10, lg: 30,xl:30 },
-                mb: 40,
                 width: "552px",
                 height: "200px",
                 position: "relative",
@@ -53,13 +52,15 @@ function BecomeAgent() {
                   color: "#0E204E",
                   textDecoration: "none",
                   textWrap: "pretty",
-                  justifyContent: "center"
+                  justifyContent: "center",
+                  mb:5
                 }}
               >
                 a community that gives you a taste of <br /> happiness, a place
                 you’ll love to live and an
                 <br /> opportunity to build a home.
               </Typography>
+
               <Button
                 variant="contained"
                 sx={{
@@ -68,171 +69,63 @@ function BecomeAgent() {
                   fontSize: "17px",
                   borderRadius: 0,
                   backgroundColor: "#0E204E",
-                  mt: 4,
                   display: {
                     xs: "none",
                     md: "flex",
                     lg: "flex",
                    
                     width: "239px",
-                    height: "62px"
+                    height: "62px",
+                    mt:"50px"
                   }
                 }}
               >
                 Join Now
               </Button>
             </Box>
-        </Grid>
-        <Grid>
-            <Box>
+        </Box>
+        <Box maxWidth={"50%"}
+        sx={{ width: "100%", 
+        display: { xs: "none", md: "flex", lg: "flex" }, 
+        justifyContent:"flex-end",
+        gap:"30px"
+        }}>
+            
 
-              <Box
-                sx={{
-                  
-                  maxWidth:"200px",
-                  width: "100%",
-                  height: "320px",
-                  bgcolor: "#0E204E",
-                  py: 10,
-                  mt: 39,
-                  ml: 10,
-                  pl: 10,
-                                
+          <Box
+            sx={{
+              maxWidth:"600px",
+              width: "80%",
+              height: "290px",
+              bgcolor: "#0E204E",
+              position: "relative",
+              py: 10,
+              display:{xs:"none",sm:"flex",xl:"flex",lg:"flex"},
+              justifyContent:"flex-end",
+              mb:"500px"
                  
                 }}
-              ></Box>
-              <Image
-                alt="home about"
-                src={girl}
-                priority={true}
-                style={{
-                  margin: 50,
-                  
-                  maxWidth:"552px",
-                  width: "100%",
-                  height: "auto",
-                  marginTop: "-500px",
-                  position: "relative",
-                  padding:"60px"
-                }}
-              />
+              >
+
               
-            </Box>
-        </Grid>
-        
-        {/* <Grid
-          sx={{
-            display: { sm: "none", md: "flex", lg: "flex" },
-            mb: 10
-          }}
-        >
-          <Grid
-            size={6}
-            sx={{
-              justifyContent: "end",
-              alignContent: "center"
-            }}
-          >
-            <Box
-              sx={{
-                ml: 20,
-                width: "512px",
-                height: "258px",
-                position: "relative",
-              }}
-            >
-              <Typography
-                variant="h2"
-                noWrap
-                component="a"
-                fontWeight={700}
-                sx={{
-                  mb: 3,
-                  display: { xs: "none", md: "flex", lg: "flex" },
-                  fontFamily: "Playfair Display",
-                  color: "#0E204E",
-                  textDecoration: "none",
-                  textWrap: "wrap"
-                }}
-              >
-                Become an
-                <br /> Agent
-              </Typography>
-              <Typography
-                noWrap
-                component="a"
-                sx={{
-                  fontFamily: "Manrope",
-                  color: "#0E204E",
-                  textDecoration: "none",
-                  textWrap: "pretty",
-                  justifyContent: "center"
-                }}
-              >
-                a community that gives you a taste of <br /> happiness, a place
-                you’ll love to live and an
-                <br /> opportunity to build a home.
-              </Typography>
-              <Button
-                variant="contained"
-                sx={{
-                  fontFamily: "Manrope",
-                  textTransform: "none",
-                  fontSize: "17px",
-                  borderRadius: 0,
-                  backgroundColor: "#0E204E",
-                  mt: 4,
-                  display: {
-                    xs: "none",
-                    md: "flex",
-                    lg: "flex",
-                   
-                    width: "239px",
-                    height: "62px"
-                  }
-                }}
-              >
-                Join Now
-              </Button>
-            </Box>
-          </Grid>
-          <Grid
-            size={6}
-            sx={{
-              display: { sm: "none", md: "flex", lg: "flex" },
-              m: 10
-            }}
-          >
-            <Box>
-
-              <Box
-                sx={{
-                  
-                  width: "412px",
-                  height: "358px",
-                  bgcolor: "#0E204E",
-                  py: 10,
-                  mt: 20,
-                 
-                }}
-              ></Box>
               <Image
                 alt="home about"
                 src={girl}
                 priority={true}
                 style={{
-                  margin: 50,
-                  marginLeft: "200px",
-                  width: "552px",
-                  height: "725px",
-                  marginTop: "-500px",
-                  position: "absolute"
+                  
+                  maxWidth:"500px",
+                  width: "100%",
+                  height: "720px",
+                  marginTop:"-300px",
+                  position: "relative",
+                  
                 }}
               />
-            </Box>
-          </Grid>
-        </Grid> */}
-      </Box>
+              </Box>
+            
+        </Box>
+      </Container>
     </>
   )
 }

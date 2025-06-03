@@ -66,7 +66,7 @@ function Galleries() {
       >
         an opportunity to build a home.
       </Typography>
-      <Box sx={{display:"grid",gap:"30px"}}>
+      <Box sx={{display:{ xs: "none", md: "grid", lg: "grid" },gap:"30px"}}>
         <Grid  sx={{display: {xs:"none", sm: "none", md: "flex", lg: "flex",xl:"flex" ,gap:"30px"},justifyContent: "center",mt: 4}}>
 
             <Grid size={3} sx={{display: { xs: "none", md: "flex", lg: "flex" }}}>
@@ -81,7 +81,7 @@ function Galleries() {
 
         </Grid>
 
-        <Grid  sx={{display: { sm: "none", md: "flex", lg: "flex", },justifyContent: "center",mt: 4,gap:"30px"}}>
+        <Grid  sx={{display: { sm: "none", md: "flex", lg: "flex", },justifyContent: "center",gap:"30px"}}>
 
             <Grid size={3} sx={{display: { xs: "none", md: "flex", lg: "flex" }}}>
                 <Image alt='pic4' src={pic4} priority={true} style={{maxWidth:"469px",width:"100%",maxHeight:"469px",height:"100%"}} />
@@ -95,7 +95,7 @@ function Galleries() {
 
         </Grid>
 
-        <Grid  sx={{display: { sm: "none", md: "flex", lg: "flex",},justifyContent: "center",mt: 4 ,mb:55,gap:"30px"}}>
+        <Grid  sx={{display: { sm: "none", md: "flex", lg: "flex",},justifyContent: "center" ,mb:55,gap:"30px"}}>
 
             <Grid size={4} sx={{display: { xs: "none", md: "flex", lg: "flex" }}}>
                 <Image alt='pic7' src={pic7} priority={true} style={{maxWidth:"469px",width:"100%",maxHeight:"469px",height:"100%"}} />

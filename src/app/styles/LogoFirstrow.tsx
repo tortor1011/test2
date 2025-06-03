@@ -7,14 +7,14 @@ import GoodRate from "../../../public/picturenotext/BlingBling.png"
 const LogoFirstrow = () => {
   return (
     <>
-          <Box sx={{display:"flex"}}>
+          <Box sx={{display:{xs:"none",sm:"flex",lg:"flex"},gap:"30px"}}>
         <Grid>
             <Image 
             alt="Tree"
             src={Tree}
             priority={true}
             style={{
-              marginRight:"80px",
+             
               maxWidth:"80px",
               width:"100%",
               height: "auto",
@@ -31,7 +31,7 @@ const LogoFirstrow = () => {
             src={SmartHome}
             priority={true}
             style={{
-              marginRight:"80px",
+             
               maxWidth:"80px",
               width:"100%",
               height: "auto",
@@ -48,7 +48,7 @@ const LogoFirstrow = () => {
             src={GoodRate}
             priority={true}
             style={{
-              marginRight:"80px",
+           
               maxWidth:"80px",
               width:"100%",
               height: "auto",

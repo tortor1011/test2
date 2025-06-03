@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Typography, Grid } from '@mui/material';
+import { Box, Typography, Grid, Container } from '@mui/material';
 import Image from 'next/image';
 import road from '../../../public/image/road.jpg'
 import leftslide from '../../../public/image/leftslide.jpg'
@@ -88,6 +88,7 @@ export default function AboutSection() {
         </Typography>
         
       </Box>
+      {/* box นี้ข้อความเฉยๆ */}
          <Box 
     sx={{
          display: {xs:'none',md:'flex',lg:'flex'},
@@ -114,132 +115,116 @@ export default function AboutSection() {
         </Typography>
       </Box>
     </Box> 
-    {/* end of text */}
-    <Box
+    {/* boxบน */}
+    <Container maxWidth={false}
+      sx={{
+        display: { xs: "none", md: "flex", lg: "flex" },
+        maxWidth:"100%" ,
+        mb:50
+        
+      }}
+      >
+      <Box sx={{width: '50%'}}>
+        <Grid
+          sx={{
+            maxWidth:"800px",
+            width: "100%",
+            height: "290px",
+            bgcolor: "#0E204E",
+            position: "relative",
+            py: 10,
+           
+           
+          }}
+          >
+          <Image
+          alt="home about"
+          src={Garden}
+          priority={true}
+          
+          style={{
+            maxWidth:"567px",
+            width: "100%",
+            height: "582px",
+            marginTop: "-200px",
+            position: "relative",     
+            justifyItems:"center",
+          }}
+          />
+          </Grid>  
+        </Box>
+
+          <Grid
+
+          sx={{
+            display:{ xs: "none", md: "flex", lg: "flex" },
+            justifyContent: "center",
+            alignContent: "center",
+             width: '50%'
+          }}
+          >
+          <LogoFirstrow />
+          </Grid>
+      </Container>
+      
+      {/* box นี้ box ล่างไม่เกี่ยวไรกับข้างบน */}
+      <Container maxWidth={false}
         sx={{
           display: { xs: "none", md: "flex", lg: "flex" },
-          ml: 10
+          maxWidth: "100%",
+          mt: 10,
+          mb: 50,
+          justifyContent:"flex-end"
         }}
       >
         <Grid
           sx={{
-            display: { sm: "none", md: "flex", lg: "flex" },
-            mb: 10
+            display: { xs: "none", md: "flex", lg: "flex" },
+            justifyContent: "center",
+            alignContent: "center",
+            width: '100%',
+            justifyItems:"flex",
+            maxWidth:"800px"
+            
           }}
         >
-          <Grid
-            size={6}
-            sx={{
-              display: { sm: "none", md: "flex", lg: "flex" },
-              m: 10
-            }}
-          >
-            
-              <Box
-                sx={{
-                  width: "250px",
-                  height: "290px",
-                  bgcolor: "#0E204E",
-                  position: "relative",
-                  py: 10,
-                  ml: 50,
-                  
-                }}
-              >
-              <Image
-                alt="home about"
-                src={Garden}
-                priority={true}
-                
-                style={{
-                  margin: 50,
-                  width: "560px",
-                  height: "582px",
-                  marginLeft:"-500px",
-                  marginTop: "-200px",
-                  position: "absolute",
-                  
-                  
-                }}
-              />
-              </Box>
-              
-            
-          </Grid>
-          <Grid
-            size={6}
-            sx={{
-              justifyContent: "end",
-              alignContent: "center"
-            }}
-          >
-            <LogoFirstrow />
-          </Grid>
+          <LogoSecondRow />
         </Grid>
-      </Box>
-      <Box
-        sx={{
-          display: { xs: "none", md: "flex", lg: "flex" },
-          ml: 25,
-          mt: 20
-        }}
-      >
-        <Grid
-          sx={{
-            display: { sm: "none", md: "flex", lg: "flex" },
-            mb: 50
-          }}
-        >
+
+        <Box sx={{ width: '50%' }}>
           <Grid
-            size={6}
             sx={{
-              justifyContent: "end",
-              alignContent: "center"
+              maxWidth:"800px",
+              width: "100%",
+              height: "290px",
+              bgcolor: "#0E204E",
+              position: "relative",
+              py: 10,
+              display:{xs:"none",sm:"flex",xl:"flex",lg:"flex"},
+              justifyContent:"flex-end"
             }}
           >
-            <LogoSecondRow />
+            <Image
+              alt="home about"
+              src={Garden2}
+              priority={true}
+              style={{
+                maxWidth: "567px",
+                width: "100%",
+                height: "582px",
+                marginTop: "-200px",
+                position: "relative",
+                justifyItems: "center",
+                justifyContent:"flex-end",
+                display:"flex",
+  
+              }}
+            />
           </Grid>
-          <Grid
-            size={6}
-            sx={{
-              display: { sm: "none", md: "flex", lg: "flex" },
-              py: 0,
-              ml: 15
-            }}
-          >
-            <Box>
-              <Box
-                sx={{
-                  width: "600px",
-                  height: "300px",
-                  bgcolor: "#0E204E",
-                  py: 10,
-                  position: "relative",
-                  mt: 2,
-                  ml:{md:"-100px",lg:0,xl:50}
-                }}
-              >
-              <Image
-                alt="home about"
-                src={Garden2}
-                priority={true}
-                
-                style={{
-                  margin: 50,
-                  
-                  maxWidth: "568px",
-                  width:"100%",
-                  height: "582px",
-                  marginTop: "-200px",
-                  position: "relative",
-                
-                }}
-              />
-              </Box>
-            </Box>
-          </Grid>
-        </Grid>
-      </Box>
+        </Box>
+        
+      </Container>
+    
     </>
   );
 }

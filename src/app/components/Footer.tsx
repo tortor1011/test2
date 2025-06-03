@@ -8,6 +8,7 @@ export default function Footer() {
           width: "100%",
           height: "396px",
           bgcolor: "#0E204E",
+          justifyContent:"center",
           mt: 10,
           clipPath:
             "polygon(100% 42%, 100% 100%, 96% 100%, 84% 100%, 0 100%, 0 32%, 11% 12%)"

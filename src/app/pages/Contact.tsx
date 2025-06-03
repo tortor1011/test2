@@ -20,7 +20,7 @@ export default function ContactSection() {
             
           }}
         >
-          Galleries
+          Stay in touch
         </Typography>
         <Typography
         noWrap

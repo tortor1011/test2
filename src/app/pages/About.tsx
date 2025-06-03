@@ -162,7 +162,7 @@ export default function About() {
               objectFit: 'cover',
               maxWidth:"800px",
               width: '100%',
-              minHeight: '552px',
+              minHeight: '620px',
             }}
           
        
@@ -175,15 +175,16 @@ export default function About() {
 
   <Box sx={{
     width: { md: '400px', lg: '433px', xl: '480px' }, 
-    height: { md: '552px', lg: '552px', xl: '552px' }, 
+    height: { md: '620px', lg: '620px', xl: '620px' }, 
     bgcolor: "#0E204E !important",
+    display: { xs: 'none', md: 'flex', lg: 'flex' },
+    alignItems:"center",
   }}>
     <Typography 
       variant="h6" 
       noWrap
       sx={{
         ml: 0,
-        mt: 8,
         p: 5,
         color: 'white',
         fontFamily: "Manrope",
