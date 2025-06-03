@@ -73,7 +73,7 @@ export default function Footer() {
         </Typography>
         <TextField name="Email"
             id="outlined-basic"
-            label="Email"
+          
             variant="outlined"
             sx={{
               mt: 2,
@@ -94,7 +94,7 @@ export default function Footer() {
             variant="text"
             sx={{
               mt: -6,
-              ml: 39,
+          
               position: "absolute",
               fontFamily: "Manrope",
               textTransform: "none",

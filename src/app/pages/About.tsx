@@ -191,8 +191,8 @@ export default function About() {
         display: { xs: "none", md: "flex", lg: "flex" },
         textWrap: "wrap",
         textDecoration: "none",
-        fontSize: { md: 16, lg: 18, xl: 20 }, // Scale for Retina
-        lineHeight: '1.5', // Better text rendering
+        fontSize: { md: 16, lg: 18, xl: 20 }, 
+        lineHeight: '1.5', 
       }}
     >
       Pineapple Island is the most sought-after community in Ibadan that
