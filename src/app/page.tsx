@@ -23,7 +23,12 @@ import About from "./pages/About"
 
 export default function Home() {
   return (
-    <div>
+    <Container maxWidth={false} 
+    sx={{
+      maxWidth:"1920px",
+      pr:"0px !important",
+      pl:"0px !important",
+    }}>
       <Header />
       <HomeSection />
       <About />
@@ -39,7 +44,7 @@ export default function Home() {
       <Contactresonsive />
       <Footer />
       <FooterResponsive /> 
-    </div>
+    </Container>
       
     
   );
