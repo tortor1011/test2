@@ -7,6 +7,7 @@ import theme from '../styles/theme';
 function WhyMustPPAP() {
   return (
     <>
+    <Box>
     <Container maxWidth={false}
         sx={{
           display: { xs: "none", md: "flex", lg: "flex" },
@@ -77,6 +78,7 @@ function WhyMustPPAP() {
               component="a"
               sx={{
                 maxHeight:"634px",
+                minWidth:"372px",
                 fontFamily: "Manrope",
                 color: "#0E204E",
                 textDecoration: "none",
@@ -103,11 +105,12 @@ function WhyMustPPAP() {
           style={{
             maxWidth:"709px",
             width: "100%",
-            height: "634px"
+            height: "634px",
+            objectFit:"cover"
           }}
         />
       </Container>
-        
+        </Box>
     
     </>
   )
