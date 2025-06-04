@@ -7,6 +7,7 @@ import theme from '../styles/theme';
 function WhyMustPPAP() {
   return (
     <>
+    <Box>
     <Container maxWidth={false}
         sx={{
           display: { xs: "none", md: "flex", lg: "flex" },
@@ -28,14 +29,14 @@ function WhyMustPPAP() {
           component="a"
           fontWeight={700}
           sx={{
-            mt: 30,
-           
-            ml: { xs: "none", md: 0, lg: 20 },
+
             display: { xs: "none", md: "flex", lg: "flex" },
             fontFamily: "Playfair Display",
             color: "white",
             textDecoration: "none",
             textWrap: "wrap"
+            ,alignItems:"center"
+            ,ml:"5px"
           }}
         >
           Why<br /> Choose<br /> Pineapple <br />
@@ -44,11 +45,12 @@ function WhyMustPPAP() {
         </ThemeProvider>    
     
     </Container>
-    <Container maxWidth={false}
+    <Box
         sx={{
           display: { xs: "none", md: "flex", lg: "flex" },
           mt: -75,
-          position: "relative",
+          ml:"600px",
+          position: "absolute",
           justifyContent:"flex-end"
         }}
       >
@@ -77,6 +79,7 @@ function WhyMustPPAP() {
               component="a"
               sx={{
                 maxHeight:"634px",
+                minWidth:"372px",
                 fontFamily: "Manrope",
                 color: "#0E204E",
                 textDecoration: "none",
@@ -103,11 +106,12 @@ function WhyMustPPAP() {
           style={{
             maxWidth:"709px",
             width: "100%",
-            height: "634px"
+            height: "634px",
+            objectFit:"cover"
           }}
         />
-      </Container>
-        
+      </Box>
+        </Box>
     
     </>
   )

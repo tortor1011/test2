@@ -32,9 +32,10 @@ export default function Home() {
           style={{ 
             position: 'relative', 
             clipPath: 'polygon(100% 0, 100% 100%, 79% 83%, 0 100%, 0 0)', 
-            maxWidth: '1268px', 
+            maxWidth: '1368px', 
+            maxHeight:"717px",
             width: '100%',
-            height: 'auto',
+            height: '100%',
             
           }}
           priority={true}
@@ -43,7 +44,7 @@ export default function Home() {
         />
         <Box
           sx={{
-            maxWidth:"650px",
+            maxWidth:"786px",
             width: "100%",
             height: "auto",
             bgcolor: '#0E204E',
@@ -72,8 +73,9 @@ export default function Home() {
               justifyContent: 'flex-start',
               alignContent: 'center',
               letterSpacing: 2,
-              fontSize: { md: '2rem', lg: '2.7rem', xl: '3.5rem' }, 
+              fontSize: "64px", 
               lineHeight: '1.25', 
+              marginLeft:"52px"
             }}
           >
             Pineapple Island: <br /> GenZ and Millenial <br /> Abode
@@ -81,7 +83,7 @@ export default function Home() {
           <Typography
             noWrap
             sx={{
-              fontSize: { md: 18, lg: 20, xl: 22 },
+              fontSize:"20px" ,
               ml: 4,
               mt: 2,
               display: { xs: 'none', md: 'flex', lg: 'flex' },
