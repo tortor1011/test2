@@ -22,6 +22,7 @@ function WhyMustPPAP() {
           
         }}
       >
+        
         <ThemeProvider theme={theme}>
         <Typography
           variant="h2"
@@ -44,16 +45,19 @@ function WhyMustPPAP() {
         </Typography>
         </ThemeProvider>    
     
-    </Container>
-    <Box
+    
+    <Box 
         sx={{
           display: { xs: "none", md: "flex", lg: "flex" },
-          mt: -75,
-          ml:"600px",
-          position: "absolute",
-          justifyContent:"flex-end"
+       
+        
+          position: "relative",
+          justifyContent:"flex-end",
+          maxWidth:"1186px",
+          width:"100%"
         }}
       >
+        
         <Box
           sx={{
             
@@ -68,9 +72,10 @@ function WhyMustPPAP() {
               overflowWrap: "break-word", 
               Width: "100%",
               whiteSpace: "pre-line", 
+            width:"100%"
           }}
         >
-          <Box>
+          
             <Typography
             
               variant="h6"
@@ -97,8 +102,8 @@ function WhyMustPPAP() {
               perfect, professional built abode that gives you the true taste of
               beauty and happiness.
             </Typography>
-          </Box>
-        </Box>
+            </Box>
+        <Box>
         <Image
           alt="home about"
           src={crophome}
@@ -111,7 +116,9 @@ function WhyMustPPAP() {
           }}
         />
       </Box>
-        </Box>
+      </Box>
+      </Container>
+      </Box>
     
     </>
   )
