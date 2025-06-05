@@ -95,8 +95,7 @@ export default function AboutSection() {
           justifyContent: "center",
           mb: 12
         }}>
-        {/* checked */}
-        {/* Left: Text title */}
+
         <Box>
           <Typography
             variant="h2"
@@ -122,7 +121,6 @@ export default function AboutSection() {
           sx={{
             display: { xs: "none", md: "flex", lg: "flex" },
             maxWidth: "100%",
-            // height:"300px",
             pl: 5
 
 
@@ -141,11 +139,8 @@ export default function AboutSection() {
                 priority={true}
 
                 style={{
-                  // maxWidth: "567px",
                   width: "70%",
                   height: 'auto',
-                  // height: "582px",
-                  // marginTop: "-200px",
                   position: "relative",
                   justifyItems: "center",
                   aspectRatio: "1/1"
@@ -239,11 +234,8 @@ export default function AboutSection() {
                 priority={true}
 
                 style={{
-                  // maxWidth: "567px",
                   width: "70%",
                   height: '100%',
-                  // height: "582px",
-                  // marginTop: "-200px",
                   position: "relative",
                   justifyItems: "center",
                   aspectRatio: "1/1"
