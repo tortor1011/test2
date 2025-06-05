@@ -1,4 +1,4 @@
-import { Box, Typography, Grid, TextField, Button } from '@mui/material';
+import { Box, Typography, Grid, TextField, Button } from '@mui/material'
 
 export default function Footer() {
   return (
@@ -9,52 +9,56 @@ export default function Footer() {
           height: "396px",
           bgcolor: "#0E204E",
           justifyContent:"center",
-          mt: 10,
+          gap:"50px",
           clipPath:
             "polygon(100% 42%, 100% 100%, 96% 100%, 84% 100%, 0 100%, 0 32%, 11% 12%)"
         }}>
       <Box sx={{
-            ml: { xs: "none", md: 20, lg: 30 },
-            mt: 15,
-            width: "270px",
-            mr:{ xs: "none", sm:0,md: 7, lg: 30 }
-          }}>
-        <Typography variant="h4"
+        display: { xs: "none", md: "flex", lg: "flex" },
+        flexWrap:"wrap",
+  
+        alignContent:"center",
+        width:"20%",
+        justifyContent:"center",
+         flexDirection:"column"
+      }}>
+        <Typography variant="h3"
             noWrap
             component="a"
             fontWeight={500}
             sx={{
               display: { xs: "none", md: "flex", lg: "flex" },
-              mb: 2,
               fontFamily: "Manrope",
               color: "white",
               textDecoration: "none"
             }}>
-          Banana Island
+          Banana <br /> Island
         </Typography>
         <Typography component="a"
             sx={{
               fontFamily: "Manrope",
               color: "white",
               textDecoration: "none",
-              textWrap: "pretty"
+              textWrap: "pretty",
+              fontSize:"20px"
             }}>
           a community that gives you a taste of happiness, a place you’ll love to live and an opportunity to build a home.
         </Typography>
       </Box>
 
       <Box sx={{
-           
-            mt: 20,
-            width: "270px"
-          }}>
+        display: { xs: "none", md: "flex", lg: "flex" },
+        flexWrap:"wrap",
+        justifyContent:'center',
+        flexDirection:"column",
+        width:'20%'
+      }}>
         <Typography variant="h4"
             noWrap
             component="a"
             fontWeight={500}
             sx={{
               display: { xs: "none", md: "flex", lg: "flex" },
-              mb: 2,
               fontFamily: "Playfair Display",
               color: "white",
               textDecoration: "none"
@@ -63,49 +67,53 @@ export default function Footer() {
         </Typography>
         <Typography component="a"
             sx={{
+              flexWrap:"wrap",
               fontFamily: "Manrope",
               color: "white",
               textDecoration: "none",
-              textWrap: "pretty"
+              textWrap: "pretty",
+              fontSize:"20px"
             }}>
           Keep up with our newsletter to get
           updates about projects and offers
         </Typography>
-        <TextField name="Email"
+        <Box sx={{ position: "relative", width: "419px", mt: 3 }}>
+          <TextField
+            name="Email"
             id="outlined-basic"
-          
+            label="Email"
             variant="outlined"
+            fullWidth
             sx={{
-              mt: 2,
               bgcolor: "white",
-              width: "419px",
-              position: "relative",
               [`& fieldset`]: {
-                borderRadius: 0
+          borderRadius: 0
               },
-
               [`& label`]: {
-                fontFamily: "Manrope"
+          fontFamily: "Manrope"
               }
-            }}>
-              
-        </TextField>
-        <Button
+            }}
+            InputProps={{
+              endAdornment: (
+          <Button
             variant="text"
             sx={{
-              mt: -6,
-          
-              position: "absolute",
               fontFamily: "Manrope",
               textTransform: "none",
               borderRadius: 0,
-              color: "grey"
+              color: "grey",
+              minWidth: "auto",
+              px: 2
             }}
           >
             Subscribe
           </Button>
+              )
+            }}
+          />
+        </Box>
         
       </Box>
     </Box>
   );
-}
+} 
