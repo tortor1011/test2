@@ -89,27 +89,42 @@ function BecomeAgent() {
             </Box>
           </Box>
         </Box>
-        <Box maxWidth={"50%"}
-          sx={{
-            width: "100%",
-            display: { xs: "none", md: "flex", lg: "flex" },
-            justifyContent: "center",
-            gap: "30px"
-          }}>
-          <Box >
-            <Image
-              alt="home about"
-              src={girl}
-              priority={true}
-              style={{
-                maxWidth: "500px",
-                width: "100%",
-                height: "720px",
-                position: "relative",
-              }}
-            />
+        <Box maxWidth={"50%"} 
+            sx={{
+              display: { sm: "none", md: "flex", lg: "flex" },
+              alignItems:"center",
+              width:"100%",
+              justifyContent:"center"
+            }}
+          >
+            <Grid sx={{ display: { xs: "none", md: "flex", lg: "flex" },
+            width:"70%",
+            alignItems:"center",
+            flexDirection:"row-reverse", 
+            height:"100%"}}>
+              <Image
+                alt="girl"
+                src={girl}
+                priority={true}
+                style={{
+                  maxWidth: "100%",
+                  width:"90%",
+                  height: "700px",
+                  position: "relative",      
+                  objectFit: "cover",
+                  aspectRatio:"1/1"
+                  
+                }}
+              />
+              <Box sx={{maxWidth: "800px",
+                        width: "100%",
+                        height: "300px",
+                        bgcolor: "#0E204E",
+                        position: "relative",
+                        display: { xs: "none", md: "flex", lg: "flex" }}}
+              />
+            </Grid>
           </Box>
-        </Box>
       </Container>
     </>
   )
