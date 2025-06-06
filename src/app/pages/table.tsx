@@ -13,7 +13,7 @@ const Table = () => {
             maxWidth:"500px",
             width: { xs: "90%", sm: "50%", md: "100%" },
             height: "auto",
-            ml: { xs: 2, sm: 8, md: 5,lg:10,xl:20 },
+  
             mt: i === 0 ? 5 : 2,
             mb: 1,
             pt: 0.5,

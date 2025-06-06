@@ -115,7 +115,8 @@ export default function About() {
             maxWidth: "100%",
             pl: 5,
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
+            height:"900px"
 
           }}
         >
