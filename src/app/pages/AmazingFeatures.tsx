@@ -13,36 +13,32 @@ function AmazingFeatures() {
   <Box maxWidth={"50%"} 
     sx={{
       display: { sm: "none", md: "flex", lg: "flex" },
-      mb: 10,
       alignItems:"center",
       width:"100%",
       justifyContent:"center"
-
-      
     }}
   >
-    <Grid  
-    sx={{
-          maxWidth:"600px",
-          width:"100%",
-          height: "300px",
-          bgcolor: "#0E204E",
-          position: "relative",
-          mt:"-450px"
-          ,}}
->
+    <Grid sx={{ display: { xs: "none", md: "flex", lg: "flex" },
+    width:"70%",
+               alignItems:"center" }}>
       <Image
         alt="home about"
         src={dining}
         priority={true}
         style={{
-          maxWidth: "500px",
-          width:"100%",
+          maxWidth: "100%",
+          width:"90%",
           height: "700px",
-          position: "relative",
-          marginTop:"-150px"
-  
+          position: "relative",      
+          objectFit: "cover"
         }}
+      />
+      <Box sx={{maxWidth: "800px",
+                width: "100%",
+                height: "300px",
+                bgcolor: "#0E204E",
+                position: "relative",
+                display: { xs: "none", md: "flex", lg: "flex" }}}
       />
     </Grid>
   </Box>
@@ -50,11 +46,10 @@ function AmazingFeatures() {
   <Box maxWidth={"50%"} 
   sx={{display: { xs: "none", md: "flex", lg: "flex" },
       width:"100%",
-      justifyContent:"flex-end",
       flexWrap: "wrap",
-      alignContent:"flex-end",
       flexDirection:"column",
-      mb:50
+      justifyContent:"center",
+      alignItems:"center"
       }}>
     <Typography
       variant="h2"
@@ -66,8 +61,6 @@ function AmazingFeatures() {
         color: "#0E204E",
         textDecoration: "none",
         textWrap: "nowrap",
-        marginLeft:{sm:"20px",md: "40px", lg: "100px",xl:"160px" }
-         
       }}
     >
       Amazing Features
@@ -75,7 +68,6 @@ function AmazingFeatures() {
     <Table />
   </Box>
 </Container>
-
     </>
   )
 }
