@@ -29,6 +29,7 @@ function FooterResponsive() {
               textDecoration: "none",
               textWrap: "pretty",
               textAlign: "center"
+              ,fontSize:"18px"
             }}
           >
             Pineapple Island
