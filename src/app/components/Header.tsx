@@ -50,7 +50,8 @@ export default function ResponsiveAppBar() {
               letterSpacing: '.0rem',
               color: '0E204E',
               textDecoration: 'none',
-              justifyContent:"flex-end"
+              justifyContent:"flex-end",
+              fontSize:"32px"
             }}
           >
             Pineapple<br />Island

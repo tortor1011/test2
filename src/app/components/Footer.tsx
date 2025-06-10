@@ -37,7 +37,8 @@ export default function Footer() {
               fontFamily: "Manrope",
               color: "white",
               textDecoration: "none",
-              textWrap: "pretty"
+              textWrap: "pretty",
+              fontSize:'20px'
             }}>
           a community that gives you a taste of happiness, a place you’ll love to live and an opportunity to build a home.
         </Typography>
@@ -66,7 +67,8 @@ export default function Footer() {
               fontFamily: "Manrope",
               color: "white",
               textDecoration: "none",
-              textWrap: "pretty"
+              textWrap: "pretty",
+              fontSize:"20px"
             }}>
           Keep up with our newsletter to get
           updates about projects and offers
