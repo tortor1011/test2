@@ -37,7 +37,8 @@ function WhyMustPPAP() {
             textDecoration: "none",
             textWrap: "wrap"
             ,alignItems:"center"
-            ,ml:"5px"
+            ,ml:"5px",
+            fontSize:"60px"
           }}
         >
           Why<br /> Choose<br /> Pineapple <br />

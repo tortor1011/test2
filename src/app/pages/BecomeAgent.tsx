@@ -45,7 +45,8 @@ function BecomeAgent() {
                   color: '#0E204E',
                   textDecoration: 'none',
                   textWrap: 'wrap',
-                  mr: 2
+                  mr: 2,
+                  fontSize:"60px"
                 }}
               >
                 Become an
@@ -73,7 +74,7 @@ function BecomeAgent() {
                 sx={{
                   fontFamily: 'Manrope',
                   textTransform: 'none',
-                  fontSize: '17px',
+                  fontSize: '20px',
                   borderRadius: 0,
                   backgroundColor: '#0E204E',
                   display: {
@@ -82,6 +83,7 @@ function BecomeAgent() {
                     lg: 'flex',
                     width: '239px',
                     height: '62px'
+
                   }
                 }}
               >
