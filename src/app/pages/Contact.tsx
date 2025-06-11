@@ -33,7 +33,8 @@ export default function ContactSection() {
           color: "#0E204E",
           textDecoration: "none",
           textWrap: "stable",
-          justifyContent: "center"
+          justifyContent: "center",
+          fontSize:"20px"
         }}
       >
         Are you curious about Pineapple Island? Send a message
@@ -56,6 +57,7 @@ export default function ContactSection() {
           sx={{fontFamily: "Manrope",
                   textTransform: "none",
                   width: "120px",
+                  fontSize:"18px",
                   borderRadius: 0,
                   backgroundColor: "#0E204E"}}>Send</Button>
         </Grid>

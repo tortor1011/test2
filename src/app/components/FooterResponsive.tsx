@@ -1,12 +1,12 @@
 import React from 'react'
-import Image from 'next/image';
-import { Box, Button, TextField, Typography } from "@mui/material"
+import Image from 'next/image'
+import { Box ,Typography } from "@mui/material"
 import copyright from '../../../public/galleries/Copyright.svg'
 
 function FooterResponsive() {
   return (
     <>
-    <Box
+      <Box
         sx={{
           display: { xs: "flex", md: "none", lg: "none" },
           justifyContent: "center",
@@ -17,18 +17,19 @@ function FooterResponsive() {
         }}
       >
         <Box sx={{
-          mt:2
+          mt: 2
         }} >
           <Typography
             variant="h6"
             component="a"
             sx={{
-              
+
               fontFamily: "Lato",
               color: "white",
               textDecoration: "none",
               textWrap: "pretty",
               textAlign: "center"
+              , fontSize: "18px"
             }}
           >
             Pineapple Island
@@ -71,5 +72,4 @@ function FooterResponsive() {
     </>
   )
 }
-
 export default FooterResponsive
