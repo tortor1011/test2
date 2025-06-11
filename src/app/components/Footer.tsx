@@ -25,7 +25,6 @@ export default function Footer() {
         <Typography
           variant='h3'
           noWrap
-          component='a'
           fontWeight={500}
           sx={{
             display: { xs: 'none', md: 'flex', lg: 'flex' },
@@ -36,7 +35,6 @@ export default function Footer() {
           Banana <br /> Island
         </Typography>
         <Typography
-          component='a'
           sx={{
             fontFamily: 'Manrope',
             color: 'white',
@@ -59,7 +57,6 @@ export default function Footer() {
         <Typography
           variant='h4'
           noWrap
-          component='a'
           fontWeight={500}
           sx={{
             display: { xs: 'none', md: 'flex', lg: 'flex' },
@@ -70,7 +67,6 @@ export default function Footer() {
           Follow up
         </Typography>
         <Typography
-          component='a'
           sx={{
             flexWrap: 'wrap',
             fontFamily: 'Manrope',
