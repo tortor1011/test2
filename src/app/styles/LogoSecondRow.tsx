@@ -35,7 +35,12 @@ const LogoSecondRow = () => {
               height: "auto",
             }}
           />
-          <Typography sx={{ mt: 1,  }}>
+          <Typography sx=
+          {{ 
+            mt: 1,
+            fontSize:"18px"  
+            }}
+            >
             Private Security
           </Typography>
         </Grid>
@@ -52,7 +57,12 @@ const LogoSecondRow = () => {
               marginTop: "5px",
             }}
           />
-          <Typography sx={{ mt: "6px ",whiteSpace:"nowrap" }}>
+          <Typography sx={{
+             mt: "6px ",
+             whiteSpace:"nowrap"
+             ,fontSize:"18px"
+              }}
+              >
             24/7 Electricity
           </Typography>
         </Grid>

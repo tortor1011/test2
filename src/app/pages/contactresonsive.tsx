@@ -125,6 +125,7 @@ function Contactresonsive() {
             sx={{
               display: { sm: "flex", md: "none", lg: "none" },
               justifyContent: "center",
+              alignItems:"center",
               mt: 5
             }}
             rowSpacing={2}
@@ -209,9 +210,17 @@ function Contactresonsive() {
                 />
               </Grid>
               <Grid
+            
                 size={12}
                 sx={{
-                  mt: 2
+                  mt: 2,
+                  display:{
+                    xs:"flex",
+                    md:"none",
+                    lg:"none",
+                    xl:"none"
+                  },
+                  justifyContent:"center"
                 }}
               >
                 <Button
@@ -221,7 +230,6 @@ function Contactresonsive() {
                     textTransform: "none",
                     width: "82px",
                     height: "40px",
-                    ml: 10,
                     backgroundColor: "#0E204E",
                     color: "white"
                   }}

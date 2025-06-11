@@ -33,7 +33,7 @@ export default function AboutSection() {
           sx={{
             fontFamily: "Playfair Display",
             position: "absolute",
-
+            fontSize:"26px",
             textWrap: "wrap",
             color: "#0E204E",
             textDecoration: "none",

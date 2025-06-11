@@ -45,7 +45,8 @@ function Galleries() {
           color: "#0E204E",
           textDecoration: "none",
           textWrap: "stable",
-          justifyContent: "center"
+          justifyContent: "center",
+          fontSize:"20px"
         }}
       >
         a community that gives you a taste of happiness, a place you’ll love to
@@ -61,6 +62,7 @@ function Galleries() {
           color: "#0E204E",
           textDecoration: "none",
           textWrap: "stable",
+          fontSize:"20px",
           justifyContent: "center"
         }}
       >

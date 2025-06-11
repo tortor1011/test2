@@ -1,4 +1,4 @@
-import { Box, Button, Container, Typography, AppBar, Toolbar, Link,Grid } from '@mui/material';
+import { Box, Button, Container, Typography, AppBar, Toolbar, Link, Grid } from '@mui/material';
 import Image from 'next/image';
 import LogoFirstrow from "../styles/LogoFirstrow"
 import Gardenresponsive from "../../../public/image/gardenresponsive.png"
@@ -10,7 +10,7 @@ import Table from "./table"
 const WhatPPAP = () => {
   return (
     <>
- <Box
+      <Box
         sx={{
           display: { xs: "flex", md: "none", lg: "none" },
           justifyContent: "center",
@@ -67,7 +67,7 @@ const WhatPPAP = () => {
         sx={{
           display: { xs: "flex", md: "none", lg: "none" },
           justifyContent: "center",
-          
+
         }}
       >
         <Box sx={{ width: "100%", maxWidth: 334, mx: "auto" }}>
